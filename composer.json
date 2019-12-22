@@ -1,0 +1,42 @@
+{
+    "name": "brotkrueml/form-country-select",
+    "type": "typo3-cms-extension",
+    "description": "Form element for selecting a country",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Chris Müller",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "symfony/intl": "^4.3 || ^5.0",
+        "typo3/cms-core": "^9.5",
+        "typo3/cms-form": "^9.5"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.16"
+    },
+    "autoload": {
+        "psr-4": {
+            "Brotkrueml\\FormCountrySelect\\": "Classes"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "vendor-dir": ".Build/vendor",
+        "bin-dir": ".Build/bin"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "form_country_select",
+            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "web-dir": ".Build/web"
+        }
+    },
+    "scripts": {
+        "zip": "grep -Po \"(?<='version' => ')([0-9]+\\.[0-9]+\\.[0-9]+)\" ext_emconf.php | xargs -I {version} sh -c 'mkdir -p ../zip; git archive -v -o \"../zip/${PWD##*/}_{version}.zip\" v{version}'",
+        "fix-cs": ".Build/bin/php-cs-fixer fix"
+    }
+}

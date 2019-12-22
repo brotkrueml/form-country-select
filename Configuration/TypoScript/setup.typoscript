@@ -1,0 +1,7 @@
+plugin.tx_form {
+  settings {
+    yamlConfigurations {
+      1577009173 = EXT:form_country_select/Configuration/Yaml/FormSetup.yaml
+    }
+  }
+}

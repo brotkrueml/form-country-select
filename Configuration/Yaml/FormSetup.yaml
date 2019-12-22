@@ -1,0 +1,31 @@
+TYPO3:
+  CMS:
+    Form:
+      prototypes:
+        standard:
+          formElementsDefinition:
+            CountrySelect:
+              __inheritances:
+                10: 'TYPO3.CMS.Form.prototypes.standard.formElementsDefinition.SingleSelect'
+              formEditor:
+                editors:
+                  300: null
+                  500:
+                    identifier: defaultValue
+                    templateName: Inspector-TextEditor
+                    label: formEditor.elements.TextMixin.editor.defaultValue.label
+                    propertyPath: defaultValue
+                  700: null
+                label: 'formEditor.elements.CountrySelect.label'
+                group: select
+                groupSorting: 1000
+                iconIdentifier: 'form-country-select'
+              implementationClassName: 'Brotkrueml\FormCountrySelect\Domain\Model\FormElements\CountrySelect'
+              renderingOptions:
+                templateName: 'SingleSelect'
+          formEditor:
+            formEditorPartials:
+              FormElement-CountrySelect: 'Stage/SimpleTemplate'
+            dynamicRequireJsModules:
+              additionalViewModelModules:
+                - 'TYPO3/CMS/FormCountrySelect/Backend/FormEditor/CountrySelectViewModel'
