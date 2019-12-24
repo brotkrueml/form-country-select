@@ -3,4 +3,5 @@
 /.gitignore export-ignore
 /.php_cs export-ignore
 /Build/ export-ignore
+/Documentation/ export-ignore
 /README.md export-ignore
