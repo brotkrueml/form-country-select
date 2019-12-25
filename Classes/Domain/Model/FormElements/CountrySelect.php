@@ -12,6 +12,9 @@ namespace Brotkrueml\FormCountrySelect\Domain\Model\FormElements;
 
 use Symfony\Component\Intl\Countries;
 use TYPO3\CMS\Core\Site\Entity\SiteLanguage;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Extbase\Object\ObjectManager;
+use TYPO3\CMS\Extbase\SignalSlot\Dispatcher;
 use TYPO3\CMS\Form\Domain\Model\FormElements\GenericFormElement;
 
 final class CountrySelect extends GenericFormElement
@@ -19,6 +22,13 @@ final class CountrySelect extends GenericFormElement
     public function initializeFormElement()
     {
         $options = $this->getCountryOptions();
+
+        $signalSlotDispatcher = GeneralUtility::makeInstance(ObjectManager::class)->get(Dispatcher::class);
+        list($options) = $signalSlotDispatcher->dispatch(
+            __CLASS__,
+            'modifyOptions',
+            [$options]
+        );
 
         $this->setProperty('options', $options);
     }

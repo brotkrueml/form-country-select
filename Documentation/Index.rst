@@ -72,5 +72,6 @@ selection list.
    Introduction/Index
    Editor/Index
    Installation/Index
+   Developer/Index
    Sitemap
 
