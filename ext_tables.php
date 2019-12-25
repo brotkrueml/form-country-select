@@ -1,5 +1,5 @@
 <?php
-defined('TYPO3_MODE') || die('Access dienied');
+defined('TYPO3_MODE') || die();
 
 (function ($extensionKey = 'form_country_select') {
     $iconRegistry = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(
