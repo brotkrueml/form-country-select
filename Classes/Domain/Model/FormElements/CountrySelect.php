@@ -15,19 +15,22 @@ use TYPO3\CMS\Core\Site\Entity\SiteLanguage;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Object\ObjectManager;
 use TYPO3\CMS\Extbase\SignalSlot\Dispatcher;
+use TYPO3\CMS\Form\Domain\Model\FormDefinition;
 use TYPO3\CMS\Form\Domain\Model\FormElements\GenericFormElement;
+use TYPO3\CMS\Form\Domain\Model\Renderable\RenderableInterface;
 
 final class CountrySelect extends GenericFormElement
 {
     public function initializeFormElement()
     {
         $options = $this->getCountryOptions();
+        $formIdentifier = $this->getFormIdentifier($this->getParentRenderable());
 
         $signalSlotDispatcher = GeneralUtility::makeInstance(ObjectManager::class)->get(Dispatcher::class);
-        list($options) = $signalSlotDispatcher->dispatch(
+        $signalSlotDispatcher->dispatch(
             __CLASS__,
             'modifyOptions',
-            [$options]
+            [&$options, $formIdentifier]
         );
 
         $this->setProperty('options', $options);
@@ -38,6 +41,15 @@ final class CountrySelect extends GenericFormElement
         $languageTwoLetterIsoCode = $this->getSiteLanguage()->getTwoLetterIsoCode();
 
         return Countries::getNames($languageTwoLetterIsoCode);
+    }
+
+    private function getFormIdentifier(RenderableInterface $parentRenderable): string
+    {
+        if ($parentRenderable instanceof FormDefinition) {
+            return $parentRenderable->getIdentifier();
+        }
+
+        return $this->getFormIdentifier($parentRenderable->getParentRenderable());
     }
 
     private function getSiteLanguage(): SiteLanguage

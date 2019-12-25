@@ -11,12 +11,12 @@ Target group: **Developers**, **Integrators**
 
 .. _modify-options:
 
-Modifying the options
-=====================
+Modify the options
+==================
 
 With the slot :php:`modifyOptions` it is possible to change the options in the
 country selection box. This may be the case if you want to reduce the number of
-countries, change the order of the countries or perhaps add some unofficially
+countries, change the order of the countries or perhaps add some unofficial
 countries.
 
 Example
@@ -35,7 +35,7 @@ common English-speaking countries at the top of the option list.
 #. Create the slot
 
    .. code-block:: php
-      :emphasize-lines: 8,20
+      :emphasize-lines: 8
 
       <?php
       declare(strict_types=1);
@@ -44,7 +44,7 @@ common English-speaking countries at the top of the option list.
 
       class OptionsSlot
       {
-         public function changeOrderOfOptions(array $options): array
+         public function changeOrderOfOptions(array &$options, string $formIdentifier): void
          {
             $mostCommonEnglishSpeakingCountries = ['AU', 'CA', 'NZ', 'GB', 'US'];
 
@@ -55,15 +55,13 @@ common English-speaking countries at the top of the option list.
             }
 
             $options = \array_merge($topOptions, $options);
-
-            return [$options];
          }
       }
 
    In this example, the method :php:`changeOrderOfOptions()` implements the
    logic for changing the order of the countries. It always receives the options
-   as an array and must return the options in an array. The code in between is
-   up to you.
+   as an array by reference. For additional purposes the form identifier is also
+   assigned, so you can modify the country list dependent on a specific form.
 
 #. Register the slot in :file:`ext_localconf.php`
 
