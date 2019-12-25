@@ -1,12 +1,15 @@
 .. include:: ../Includes.txt
 
-.. _for-editors:
+.. _for-developers:
 
 ================
 Developer Corner
 ================
 
 Target group: **Developers**, **Integrators**
+
+
+.. _modify-options:
 
 Modifying the options
 =====================
