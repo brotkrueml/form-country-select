@@ -3,27 +3,29 @@ name: CI
 on:
   push:
     paths-ignore:
+      - .crowdin.yml
       - .editorconfig
       - .gitattributes
       - .gitignore
       - .php_cs
       - CHANGELOG.md
-      - Configuration/TypoScript
-      - Configuration/Yaml
-      - Documentation
+      - Configuration/TypoScript/*
+      - Configuration/Yaml/*
+      - Documentation/*
       - README.md
       - Resources
       - ext_typoscript_setup.txt
   pull_request:
     paths-ignore:
+      - .crowdin.yml
       - .editorconfig
       - .gitattributes
       - .gitignore
       - .php_cs
       - CHANGELOG.md
-      - Configuration/TypoScript
-      - Configuration/Yaml
-      - Documentation
+      - Configuration/TypoScript/*
+      - Configuration/Yaml/*
+      - Documentation/*
       - README.md
       - Resources
       - ext_typoscript_setup.txt
