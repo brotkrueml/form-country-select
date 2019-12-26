@@ -53,6 +53,8 @@ following methods:
    modified event from the PSR-14 events.
 
 
+.. _modification-country-list-psr-14:
+
 PSR-14 Event (for TYPO3 v10)
 ----------------------------
 
@@ -129,7 +131,7 @@ common English-speaking countries at the top of the option list.
    `TYPO3 documentation <https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/ApiOverview/Hooks/EventDispatcher/Index.html>`_.
 
 
-
+.. _modification-country-list-signal-slot:
 
 Signal/Slot (for TYPO3 v9/v10)
 ------------------------------
