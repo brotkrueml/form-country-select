@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="formEditor.elements.CountrySelect.label" resname="formEditor.elements.CountrySelect.label">
         <source><![CDATA[Country select]]></source>
-        <target state="needs-translation"><![CDATA[Country select]]></target>
+        <target state="translated"><![CDATA[Sélection de pays]]></target>
       </trans-unit>
     </body>
   </file>
