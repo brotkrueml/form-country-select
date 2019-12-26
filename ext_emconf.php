@@ -1,7 +1,7 @@
 <?php
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Form Country Select',
-    'description' => 'Form element for selecting a country',
+    'description' => 'Form element for selecting a country from a localised list',
     'category' => 'fe',
     'author' => 'Chris Müller',
     'author_email' => 'typo3@krue.ml',
