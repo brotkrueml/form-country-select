@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.0">
-  <file source-language="en" datatype="plaintext" original="EXT:form_countryselect/Resources/Private/Language/Backend.xlf" date="2019-12-22T10:27:33Z" product-name="form_country_select">
+  <file source-language="en" datatype="plaintext" original="EXT:form_country_select/Resources/Private/Language/Backend.xlf" date="2019-12-26T19:07:19Z">
     <body>
-      <trans-unit id="formEditor.elements.CountrySelect.label">
+      <trans-unit id="formEditor.elements.CountrySelect.label" resname="formEditor.elements.CountrySelect.label">
         <source><![CDATA[Country select]]></source>
       </trans-unit>
     </body>
