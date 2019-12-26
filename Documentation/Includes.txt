@@ -20,4 +20,6 @@
 
 .. role::   php(code)
 
+.. role::   yaml(code)
+
 .. highlight:: php
