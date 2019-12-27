@@ -74,5 +74,6 @@ selection list.
    Installation/Index
    Developer/Index
    FAQ/Index
+   Maintenance/Index
    Sitemap
 

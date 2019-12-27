@@ -38,3 +38,13 @@ Where does the country list come from?
 The list of countries is based on the `symfony/intl <https://github.com/symfony/intl>`__
 package, which in turn uses the localisation data of the
 `ICU library <https://github.com/unicode-org/icu>`__.
+
+Release Management
+==================
+
+This extension uses `semantic versioning <https://semver.org/>`_ which basically
+means for you, that
+
+* Bugfix updates (e.g. 1.0.0 => 1.0.1) just includes small bug fixes or security relevant stuff without breaking changes.
+* Minor updates (e.g. 1.0.0 => 1.1.0) includes new features and smaller tasks without breaking changes.
+* Major updates (e.g. 1.0.0 => 2.0.0) breaking changes which can be refactorings, features or bug fixes.
