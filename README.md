@@ -9,3 +9,6 @@ Framework which displays a select box with all countries from the ISO
 of the website page.
 
 The extension supports TYPO3 9 LTS and TYPO3 v10.
+
+[Documentation](https://docs.typo3.org/p/brotkrueml/form-country-select/master/en-us/) |
+[Translation](https://crowdin.com/project/typo3-extension-formcountryselect)
