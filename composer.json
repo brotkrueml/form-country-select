@@ -1,7 +1,7 @@
 {
     "name": "brotkrueml/form-country-select",
     "type": "typo3-cms-extension",
-    "description": "Form element for selecting a country from a localised list",
+    "description": "TYPO3 form element for selecting a country from a localised list",
     "license": "GPL-2.0-or-later",
     "authors": [
         {

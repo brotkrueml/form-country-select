@@ -6,4 +6,5 @@
 /.php_cs export-ignore
 /Build/ export-ignore
 /Documentation/ export-ignore
+/CHANGELOG.md export-ignore
 /README.md export-ignore
