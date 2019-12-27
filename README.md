@@ -12,5 +12,6 @@ of the website page.
 The extension supports TYPO3 9 LTS and TYPO3 v10.
 
 [Documentation](https://docs.typo3.org/p/brotkrueml/form-country-select/master/en-us/) |
-[Changelog](https://github.com/brotkrueml/form-country-select/blob/master/CHANGELOG.md)
-[Translation](https://crowdin.com/project/typo3-extension-formcountryselect)
+[Changelog](https://github.com/brotkrueml/form-country-select/blob/master/CHANGELOG.md) |
+[Translation](https://crowdin.com/project/typo3-extension-formcountryselect) |
+[Extension in TER](https://extensions.typo3.org/extension/form_country_select/)
