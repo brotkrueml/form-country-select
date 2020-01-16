@@ -29,6 +29,16 @@ where the visitor can select his country.
 The value of an option is the `alpha-2 code <https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>`__
 of the country, the label is the localised country name.
 
+By default, the list is sorted alphabetically by country name. However, it is
+possible to :ref:`modify <modification-country-list>` the order of the countries
+or the country list as a whole.
+
+See an example in action:
+
+   - `English form <https://www.jobrouter.com/en/request-a-demo/>`__
+   - `German form <https://www.jobrouter.com/de/demo-anfordern/>`__
+   - `Turkish form <https://www.jobrouter.com/tr/demo-talebi/>`__
+
 
 .. _where-the-country-list-comes-from:
 
