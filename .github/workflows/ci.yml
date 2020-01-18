@@ -8,12 +8,11 @@ on:
       - .gitattributes
       - .gitignore
       - .php_cs
-      - CHANGELOG.md
-      - Configuration/TypoScript/*
-      - Configuration/Yaml/*
-      - Documentation/*
-      - README.md
-      - Resources
+      - '*.md'
+      - 'Configuration/TypoScript/**'
+      - 'Configuration/Yaml/**'
+      - 'Documentation/**'
+      - 'Resources/**'
       - ext_typoscript_setup.txt
   pull_request:
     paths-ignore:
@@ -22,12 +21,11 @@ on:
       - .gitattributes
       - .gitignore
       - .php_cs
-      - CHANGELOG.md
-      - Configuration/TypoScript/*
-      - Configuration/Yaml/*
-      - Documentation/*
-      - README.md
-      - Resources
+      - '*.md'
+      - 'Configuration/TypoScript/**'
+      - 'Configuration/Yaml/**'
+      - 'Documentation/**'
+      - 'Resources/**'
       - ext_typoscript_setup.txt
 
 jobs:
