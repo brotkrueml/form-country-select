@@ -4,7 +4,10 @@
     <body>
       <trans-unit id="formEditor.elements.CountrySelect.label" resname="formEditor.elements.CountrySelect.label" approved="yes">
         <source><![CDATA[Country select]]></source>
-        <target state="final"><![CDATA[Länderauswahl]]></target>
+        <target state="final"><![CDATA[Landauswahl]]></target>
+        <alt-trans>
+          <target><![CDATA[Länderauswahl]]></target>
+        </alt-trans>
       </trans-unit>
     </body>
   </file>
