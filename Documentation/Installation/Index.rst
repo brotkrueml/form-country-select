@@ -22,7 +22,7 @@ The extension needs to be installed as any other extension of TYPO3 CMS:
    :guilabel:`form-country-select` and import the extension from the repository.
 
 #. **Get it from typo3.org:** You can always get the current version from
-   `https://extensions.typo3.org/extension/form-country-select/ <https://extensions.typo3.org/extension/form-country-select/>`_
+   `https://extensions.typo3.org/extension/form_country_select/ <https://extensions.typo3.org/extension/form_country_select/>`_
    by downloading the :file:`zip` file. Upload the file afterwards in the
    Extension Manager.
 

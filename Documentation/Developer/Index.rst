@@ -197,7 +197,7 @@ common English-speaking countries at the top of the option list.
       );
       $signalSlotDispatcher->connect(
          \Brotkrueml\FormCountrySelect\Domain\Model\FormElements\CountrySelect::class,
-         'modifyOptions',
+         'modifyCountries',
          \YourVendor\YourExtension\Slot\CountriesModificationSlot::class,
          'changeOrderOfCountries'
       );
@@ -209,3 +209,34 @@ common English-speaking countries at the top of the option list.
 
    You can find more information about signal/slots in the blog article
    `Signals and Slots – Extend TYPO3 Functionality <https://typo3worx.eu/2017/07/signals-and-slots-in-typo3/>`_.
+
+
+.. _service-class:
+
+Country List Usage in Other Scenarios
+=====================================
+
+It might be helpful to use the country list in other scenarios, e.g. an
+Extbase form – especially if a signal/PSR-14 event has been assigned. For this
+case a :php:`CountryService` class is available:
+
+::
+
+   use Brotkrueml\FormCountrySelect\Service\CountryService;
+
+   $countries = (new CountryService())->getCountries('de', 'some-identifier');
+
+As already mentioned, the assigned signals/PSR-14 events are taken into account.
+The :php:`->getCountries()` method has two optional arguments:
+
+:aspect:`string $languageTwoLetterIsoCode`
+
+   The ISO 3166-1 code of the language (e.g. ``de`` for German).
+   Default: ``en``.
+
+:aspect:`string $identifier`
+
+   The identifier is – well – an identifier. It is passed on to the event used
+   by signals/PSR-14 events, where you can work with the country list dependent
+   on this identifier.
+   Default: empty string.

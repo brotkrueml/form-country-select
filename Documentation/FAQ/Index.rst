@@ -42,3 +42,12 @@ What alpha-2 code should I use to add a custom country?
 
 Use one of the letters ``AA``, ``QM`` to ``QZ``, ``XA`` to ``XZ``, or ``ZZ``.
 They won't be assigned officially and can be used for that purpose.
+
+
+Can I use the country list in another extension?
+================================================
+
+Yes, there is a :ref:`Service class <service-class>` available. This class is
+just a wrapper around the `Symfony Intl <https://symfony.com/doc/current/components/intl.html#country-names>`__
+component with additional :ref:`Signals/PSR-14 events <modification-country-list>`.
+If you don't need the event, you can also use the Symfony component directly.

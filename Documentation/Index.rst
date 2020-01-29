@@ -40,7 +40,8 @@ selection list.
 
 **Community Documentation:**
 
-   This documentation is community documentation for the TYPO3 extension {extension.name}
+   This documentation is community documentation for the TYPO3 extension
+   form_country_select.
 
    It is maintained as part of this third party extension.
 
@@ -74,5 +75,6 @@ selection list.
    Installation/Index
    Developer/Index
    FAQ/Index
+   Maintenance/Index
    Sitemap
 

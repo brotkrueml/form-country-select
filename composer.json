@@ -1,7 +1,7 @@
 {
     "name": "brotkrueml/form-country-select",
     "type": "typo3-cms-extension",
-    "description": "Form element for selecting a country from a localised list",
+    "description": "TYPO3 form element for selecting a country from a localised list",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
@@ -30,6 +30,9 @@
         "bin-dir": ".Build/bin"
     },
     "extra": {
+        "branch-alias": {
+            "dev-master": "1.1.x-dev"
+        },
         "typo3/cms": {
             "extension-key": "form_country_select",
             "cms-package-dir": "{$vendor-dir}/typo3/cms",
