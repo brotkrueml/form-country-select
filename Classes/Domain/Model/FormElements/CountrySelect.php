@@ -10,14 +10,9 @@ namespace Brotkrueml\FormCountrySelect\Domain\Model\FormElements;
  * LICENSE.txt file that was distributed with this source code.
  */
 
-use Brotkrueml\FormCountrySelect\Event\CountriesModificationEvent;
-use Symfony\Component\Intl\Countries;
-use TYPO3\CMS\Core\EventDispatcher\EventDispatcher;
+use Brotkrueml\FormCountrySelect\Service\CountryService;
 use TYPO3\CMS\Core\Site\Entity\SiteLanguage;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Core\Utility\VersionNumberUtility;
-use TYPO3\CMS\Extbase\Object\ObjectManager;
-use TYPO3\CMS\Extbase\SignalSlot\Dispatcher;
 use TYPO3\CMS\Form\Domain\Model\FormDefinition;
 use TYPO3\CMS\Form\Domain\Model\FormElements\GenericFormElement;
 use TYPO3\CMS\Form\Domain\Model\Renderable\RenderableInterface;
@@ -26,29 +21,12 @@ final class CountrySelect extends GenericFormElement
 {
     public function initializeFormElement()
     {
-        $objectManager = GeneralUtility::makeInstance(ObjectManager::class);
+        $countryService = GeneralUtility::makeInstance(CountryService::class);
 
-        $countries = $this->getCountries();
-        $formIdentifier = $this->getFormIdentifier($this->getParentRenderable());
-
-        $event = new CountriesModificationEvent($countries, $formIdentifier);
-
-        if (VersionNumberUtility::convertVersionNumberToInteger(TYPO3_branch) >= 10000000) {
-            $eventDispatcher = $objectManager->get(EventDispatcher::class);
-            $event = $eventDispatcher->dispatch($event);
-        }
-
-        $signalSlotDispatcher = $objectManager->get(Dispatcher::class);
-        $signalSlotDispatcher->dispatch(__CLASS__, 'modifyCountries', [$event]);
-
-        $this->setProperty('options', $event->getCountries());
-    }
-
-    private function getCountries(): array
-    {
-        $languageTwoLetterIsoCode = $this->getSiteLanguage()->getTwoLetterIsoCode();
-
-        return Countries::getNames($languageTwoLetterIsoCode);
+        $this->setProperty('options', $countryService->getCountries(
+            $this->getSiteLanguage()->getTwoLetterIsoCode(),
+            $this->getFormIdentifier($this->getParentRenderable())
+        ));
     }
 
     private function getFormIdentifier(RenderableInterface $renderable): string

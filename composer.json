@@ -30,6 +30,9 @@
         "bin-dir": ".Build/bin"
     },
     "extra": {
+        "branch-alias": {
+            "dev-master": "1.1.x-dev"
+        },
         "typo3/cms": {
             "extension-key": "form_country_select",
             "cms-package-dir": "{$vendor-dir}/typo3/cms",
