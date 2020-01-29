@@ -197,7 +197,7 @@ common English-speaking countries at the top of the option list.
       );
       $signalSlotDispatcher->connect(
          \Brotkrueml\FormCountrySelect\Domain\Model\FormElements\CountrySelect::class,
-         'modifyOptions',
+         'modifyCountries',
          \YourVendor\YourExtension\Slot\CountriesModificationSlot::class,
          'changeOrderOfCountries'
       );
