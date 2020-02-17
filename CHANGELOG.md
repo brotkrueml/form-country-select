@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Prevent exception when using preview in form manager (#4)
+
 ## [1.1.0] - 2020-01-31
 
 ### Added

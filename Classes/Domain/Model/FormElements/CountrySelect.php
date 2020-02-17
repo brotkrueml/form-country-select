@@ -11,7 +11,8 @@ namespace Brotkrueml\FormCountrySelect\Domain\Model\FormElements;
  */
 
 use Brotkrueml\FormCountrySelect\Service\CountryService;
-use TYPO3\CMS\Core\Site\Entity\SiteLanguage;
+use TYPO3\CMS\Core\Authentication\BackendUserAuthentication;
+use TYPO3\CMS\Core\Http\ServerRequest;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Form\Domain\Model\FormDefinition;
 use TYPO3\CMS\Form\Domain\Model\FormElements\GenericFormElement;
@@ -24,7 +25,7 @@ final class CountrySelect extends GenericFormElement
         $countryService = GeneralUtility::makeInstance(CountryService::class);
 
         $this->setProperty('options', $countryService->getCountries(
-            $this->getSiteLanguage()->getTwoLetterIsoCode(),
+            $this->getLanguageCode(),
             $this->getFormIdentifier($this->getParentRenderable())
         ));
     }
@@ -38,8 +39,24 @@ final class CountrySelect extends GenericFormElement
         return $this->getFormIdentifier($renderable->getParentRenderable());
     }
 
-    private function getSiteLanguage(): SiteLanguage
+    private function getLanguageCode(): string
     {
-        return $GLOBALS['TYPO3_REQUEST']->getAttribute('language');
+        if (TYPO3_MODE === 'BE') {
+            return $this->getBackendUser()->uc['lang'];
+        }
+
+        return $this->getServerRequest()
+            ->getAttribute('language')
+            ->getTwoLetterIsoCode();
+    }
+
+    private function getServerRequest(): ServerRequest
+    {
+        return $GLOBALS['TYPO3_REQUEST'];
+    }
+
+    private function getBackendUser(): BackendUserAuthentication
+    {
+        return $GLOBALS['BE_USER'];
     }
 }
