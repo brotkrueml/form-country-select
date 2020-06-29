@@ -8,6 +8,10 @@ FAQ
 
 Target group: **Developers**, **Integrators**
 
+.. contents:: Table of Contents
+   :depth: 3
+   :local:
+
 
 Why can't I see the CountrySelect form element in frontend?
 ===========================================================

@@ -37,26 +37,21 @@ Now you can configure the country select element:
    :alt: Element options
 
 
-:aspect:`Label`
-
+Label
    Enter the label which should be shown to the visitor.
 
-:aspect:`Description`
-
+Description
    An additional description can be added to show some more information about
    this form element to the visitor.
 
-:aspect:`First option (empty value)`
-
+First option (empty value)
    By default, the selection field with the countries has no empty option. You
    can enter a value here to add an empty option at the beginning of the country
    list (like the single select element).
 
-:aspect:`Default value`
-
+Default value
    If desired, insert here the `alpha-2 code <https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>`__
    of the country you would like to be selected by default (e.g. DE for Germany).
 
-:aspect:`Required field`
-
+Required field
    If an option should be selected then activate this checkbox.

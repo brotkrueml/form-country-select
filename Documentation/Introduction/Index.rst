@@ -12,10 +12,10 @@ Introduction
 What does it do?
 ================
 
-The extension provides an additional form element for the TYPO3 Form Framework
-which displays a select box with all countries from the
-`ISO 3166-1 <https://en.wikipedia.org/wiki/ISO_3166-1>`__ standard. The country
-list is localised according to the language of the website page.
+The extension provides an additional form element for the :ref:`TYPO3 Form
+Framework <t3form:introduction>` which displays a select box with all countries
+from the `ISO 3166-1 <https://en.wikipedia.org/wiki/ISO_3166-1>`_ standard. The
+country list is localised according to the language of the website page.
 
 .. figure:: ../Images/country-select-frontend.png
    :class: with-shadow
@@ -26,7 +26,7 @@ list is localised according to the language of the website page.
 This is especially useful for forms on websites with an international audience,
 where the visitor can select his country.
 
-The value of an option is the `alpha-2 code <https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>`__
+The value of an option is the `alpha-2 code <https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>`_
 of the country, the label is the localised country name.
 
 By default, the list is sorted alphabetically by country name. However, it is
@@ -35,9 +35,9 @@ or the country list as a whole.
 
 See an example in action:
 
-   - `English form <https://www.jobrouter.com/en/request-a-demo/>`__
-   - `German form <https://www.jobrouter.com/de/demo-anfordern/>`__
-   - `Turkish form <https://www.jobrouter.com/tr/demo-talebi/>`__
+- `English form <https://www.jobrouter.com/en/request-a-demo/>`__
+- `German form <https://www.jobrouter.com/de/demo-anfordern/>`__
+- `Turkish form <https://www.jobrouter.com/tr/demo-talebi/>`__
 
 
 .. _where-the-country-list-comes-from:

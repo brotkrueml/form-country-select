@@ -1,5 +1,4 @@
 .. include:: ../Includes.txt
-
 .. highlight:: shell
 
 .. _maintenance:
@@ -17,17 +16,17 @@ Translations
 ============
 
 The translation to other languages is done within the
-`Crowdin <https://crowdin.com/>`__ service. It is appreciated to add missing or
+`Crowdin <https://crowdin.com/>`_ service. It is appreciated to add missing or
 incomplete languages. Please navigate to the
-`project home <https://crowdin.com/project/typo3-extension-formcountryselect>`__.
+`project home <https://crowdin.com/project/typo3-extension-formcountryselect>`_.
 If the language is not available please drop me a :ref:`note <start>` and I will
-create it.
+add it.
 
 .. note::
 
    For now, the language files are integrated into a release of the extension.
    When the new
-   `translation structure <https://github.com/TYPO3-Initiatives/crowdin>`__
+   `translation structure <https://github.com/TYPO3-Initiatives/crowdin>`_
    (based on the translations within Crowdin) is in place, the language files
    (other than English) will be removed in favour of the new infrastructure.
 

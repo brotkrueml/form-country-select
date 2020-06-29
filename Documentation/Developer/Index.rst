@@ -11,26 +11,26 @@ Target group: **Developers**, **Integrators**
 
 .. _modification-country-list:
 
-Modification of the Country List
+Modification of the country list
 ================================
 
 It is possible to change the list of options in the country selection box. This
 may be the case if you want to reduce the number of countries, change the order
 of the countries or perhaps add some "unofficial" countries.
 
-For TYPO3 v9/v10 you can use a signal/slot, for TYPO3 v10 there is also a
-PSR-14 event.
+For TYPO3 v9/v10 you can use a signal/slot, for TYPO3 v10+ there is a PSR-14
+event.
 
 Both versions receive the
 :php:`Brotkrueml\FormCountrySelect\Event\CountriesModificationEvent` with the
 following methods:
 
-:aspect:`->getFormIdentifier(): string`
+.. option:: ->getFormIdentifier(): string
 
    Get the form identifier (e.g. ``contact-42``, where ``contact`` is the
    identifier and ``42`` the content element id.
 
-:aspect:`->getCountries(): array`
+.. option:: ->getCountries(): array
 
    Returns the list of countries in the format:
 
@@ -42,7 +42,7 @@ following methods:
          // ...
       ]
 
-:aspect:`->setCountries(array $countries): void`
+.. option:: ->setCountries(array $countries): void
 
    Sets the countries in the same format as above.
 
@@ -55,15 +55,15 @@ following methods:
 
 .. _modification-country-list-psr-14:
 
-PSR-14 Event (for TYPO3 v10)
-----------------------------
+PSR-14 event (for TYPO3 v10+)
+-----------------------------
 
 With the PSR-14 event
 :php:`Brotkrueml\FormCountrySelect\Event\CountriesModificationEvent` you can
 change the list shown in the country selection box.
 
 .. note::
-   This is the preferred way for TYPO3 v10.
+   This is the preferred way for TYPO3 v10+.
 
 Example
 ~~~~~~~
@@ -77,7 +77,7 @@ common English-speaking countries at the top of the option list.
 
 .. rst-class:: bignums-xxl
 
-#. Create the Event Listener
+#. Create the event listener
 
    ::
 
@@ -133,7 +133,7 @@ common English-speaking countries at the top of the option list.
 
 .. _modification-country-list-signal-slot:
 
-Signal/Slot (for TYPO3 v9/v10)
+Signal/slot (for TYPO3 v9/v10)
 ------------------------------
 
 The signal :php:`modifyCountries` of the
@@ -154,7 +154,7 @@ common English-speaking countries at the top of the option list.
 
 .. rst-class:: bignums-xxl
 
-#. Create the Slot
+#. Create the slot
 
    ::
 
@@ -188,7 +188,7 @@ common English-speaking countries at the top of the option list.
    changes you have to assign the new country list with a call to the event
    method :php:`setCountries()`.
 
-#. Register the Slot in :file:`ext_localconf.php`
+#. Register the slot in :file:`ext_localconf.php`
 
    ::
 
@@ -213,7 +213,7 @@ common English-speaking countries at the top of the option list.
 
 .. _service-class:
 
-Country List Usage in Other Scenarios
+Country list usage in other scenarios
 =====================================
 
 It might be helpful to use the country list in other scenarios, e.g. an
@@ -229,12 +229,12 @@ case a :php:`CountryService` class is available:
 As already mentioned, the assigned signals/PSR-14 events are taken into account.
 The :php:`->getCountries()` method has two optional arguments:
 
-:aspect:`string $languageTwoLetterIsoCode`
+.. option:: string $languageTwoLetterIsoCode
 
    The ISO 3166-1 code of the language (e.g. ``de`` for German).
    Default: ``en``.
 
-:aspect:`string $identifier`
+.. option:: string $identifier
 
    The identifier is – well – an identifier. It is passed on to the event used
    by signals/PSR-14 events, where you can work with the country list dependent

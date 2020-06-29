@@ -11,8 +11,6 @@
 .. DEFINE SOME TEXT ROLES
 .. --------------------------------------------------
 
-.. role::   aspect (emphasis)
-
 .. role::   typoscript(code)
 
 .. role::   ts(typoscript)
@@ -21,5 +19,7 @@
 .. role::   php(code)
 
 .. role::   yaml(code)
+
+.. role::   shell(code)
 
 .. highlight:: php

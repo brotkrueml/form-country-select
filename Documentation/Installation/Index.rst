@@ -1,4 +1,5 @@
 .. include:: ../Includes.txt
+.. highlight:: shell
 
 .. _installation:
 
@@ -10,21 +11,17 @@ Target group: **Administrators**
 
 .. note::
 
-   The extension works with TYPO3 9 LTS and TYPO3 v10.
+   The extension supports TYPO3 v9 LTS and TYPO3 v10 LTS.
 
-The extension needs to be installed as any other extension of TYPO3 CMS:
+The recommended way to install this extension is by using Composer. In your
+Composer based TYPO3 project root, just type::
 
-#. **Use composer**: The preferred way is to use the composer dependency manager:
-   ``composer req brotkrueml/form-country-select``.
+   composer req brotkrueml/form-country-select
 
-#. **Get it from the Extension Manager:** Press the :guilabel:`Retrieve/Update`
-   button in the Extension Manager backend module, search for the extension key
-   :guilabel:`form-country-select` and import the extension from the repository.
+and the recent stable version will be installed.
 
-#. **Get it from typo3.org:** You can always get the current version from
-   `https://extensions.typo3.org/extension/form_country_select/ <https://extensions.typo3.org/extension/form_country_select/>`_
-   by downloading the :file:`zip` file. Upload the file afterwards in the
-   Extension Manager.
+You can also install the extension from the `TYPO3 Extension Repository (TER)
+<https://extensions.typo3.org/extension/form_country_select/>`_.
 
 
 .. _include-static-typoscript:
