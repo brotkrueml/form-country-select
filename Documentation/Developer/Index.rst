@@ -28,7 +28,7 @@ following methods:
 .. option:: ->getFormIdentifier(): string
 
    Get the form identifier (e.g. ``contact-42``, where ``contact`` is the
-   identifier and ``42`` the content element id.
+   identifier and ``42`` the content element id).
 
 .. option:: ->getCountries(): array
 
@@ -41,6 +41,12 @@ following methods:
          'US' => 'United States',
          // ...
       ]
+
+.. option:: ->getLanguageTwoLetterIsoCode(): string
+
+   Get the `two letter ISO code
+   <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`_ of the language of
+   the page (e.g. ``en`` for English or ``de`` for German).
 
 .. option:: ->setCountries(array $countries): void
 

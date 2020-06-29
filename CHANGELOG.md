@@ -6,22 +6,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Enhance CountriesModificationEvent with page language (#5)
+
 ## [1.1.1] - 2020-02-17
 
 ### Fixed
-
 - Prevent exception when using preview in form manager (#4)
 
 ## [1.1.0] - 2020-01-31
 
 ### Added
-
 - Service class for usage of the country list in other scenarios
 
 ## [1.0.0] - 2019-12-27
 
 ### Added
-
 - Form element "Country select"
 - Signal/slot and PSR-14 event for modifying the country list
 

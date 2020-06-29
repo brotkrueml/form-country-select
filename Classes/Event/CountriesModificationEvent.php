@@ -22,10 +22,16 @@ final class CountriesModificationEvent
      */
     private $formIdentifier;
 
-    public function __construct(array $countries, string $formIdentifier)
+    /**
+     * @var string
+     */
+    private $languageTwoLetterIsoCode;
+
+    public function __construct(array $countries, string $formIdentifier, string $languageTwoLetterIsoCode)
     {
         $this->countries = $countries;
         $this->formIdentifier = $formIdentifier;
+        $this->languageTwoLetterIsoCode = $languageTwoLetterIsoCode;
     }
 
     public function getCountries(): array
@@ -36,6 +42,11 @@ final class CountriesModificationEvent
     public function getFormIdentifier(): string
     {
         return $this->formIdentifier;
+    }
+
+    public function getLanguageTwoLetterIsoCode(): string
+    {
+        return $this->languageTwoLetterIsoCode;
     }
 
     /**

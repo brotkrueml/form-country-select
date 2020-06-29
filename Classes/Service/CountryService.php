@@ -29,7 +29,7 @@ final class CountryService
         $objectManager = GeneralUtility::makeInstance(ObjectManager::class);
 
         $countries = Countries::getNames($languageTwoLetterIsoCode);
-        $event = new CountriesModificationEvent($countries, $identifier);
+        $event = new CountriesModificationEvent($countries, $identifier, $languageTwoLetterIsoCode);
 
         if (VersionNumberUtility::convertVersionNumberToInteger(TYPO3_branch) >= 10000000) {
             $eventDispatcher = $objectManager->get(EventDispatcher::class);

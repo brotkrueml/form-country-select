@@ -9,18 +9,20 @@ class CountriesModificationEventTest extends TestCase
     /**
      * @test
      */
-    public function getterReturnCorrectValuesSetByConstructor(): void
+    public function gettersReturnCorrectValuesSetByConstructor(): void
     {
         $countries = [
             'DE' => 'Germany',
             'US' => 'United States',
         ];
         $formIdentifier = 'some-identifier';
+        $languageTwoLetterIsoCode = 'cd';
 
-        $subject = new CountriesModificationEvent($countries, $formIdentifier);
+        $subject = new CountriesModificationEvent($countries, $formIdentifier, $languageTwoLetterIsoCode);
 
         self::assertSame($countries, $subject->getCountries());
         self::assertSame($formIdentifier, $subject->getFormIdentifier());
+        self::assertSame($languageTwoLetterIsoCode, $subject->getLanguageTwoLetterIsoCode());
     }
 
     /**
@@ -33,7 +35,8 @@ class CountriesModificationEventTest extends TestCase
                 'DE' => 'Germany',
                 'US' => 'United States',
             ],
-            'some-identifier'
+            'some-identifier',
+            'en'
         );
 
         $countries = [
