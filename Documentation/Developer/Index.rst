@@ -139,17 +139,17 @@ common English-speaking countries at the top of the option list.
 
 .. _modification-country-list-signal-slot:
 
-Signal/slot (for TYPO3 v9/v10)
-------------------------------
+Signal/slot (for TYPO3 v9/v10/v11)
+----------------------------------
 
 The signal :php:`modifyCountries` of the
 :php:`Brotkrueml\FormCountrySelect\Domain\Model\FormElements\CountrySelect`
 class enables you to modify the options in the country selection box.
 
 .. note::
-   If you use TYPO3 v10 you should use the PSR-14 event above. The signal/slot
-   will be deleted when the compatibility of this extension for TYPO3 v9 is
-   removed in later versions.
+   If you use TYPO3 v10 or higher you should use the PSR-14 event above. The
+   signal/slot will be deleted when the compatibility of this extension for
+   TYPO3 v9 is removed in future versions.
 
 Example
 ~~~~~~~
