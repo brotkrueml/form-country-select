@@ -12,8 +12,9 @@ declare(strict_types=1);
 namespace Brotkrueml\FormCountrySelect\Domain\Model\FormElements;
 
 use Brotkrueml\FormCountrySelect\Service\CountryService;
+use Psr\Http\Message\ServerRequestInterface;
 use TYPO3\CMS\Core\Authentication\BackendUserAuthentication;
-use TYPO3\CMS\Core\Http\ServerRequest;
+use TYPO3\CMS\Core\Http\ApplicationType;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Form\Domain\Model\FormDefinition;
 use TYPO3\CMS\Form\Domain\Model\FormElements\GenericFormElement;
@@ -42,7 +43,7 @@ final class CountrySelect extends GenericFormElement
 
     private function getLanguageCode(): string
     {
-        if (TYPO3_MODE === 'BE') {
+        if ($this->isBackendApplicationType()) {
             return $this->getBackendUser()->uc['lang'];
         }
 
@@ -51,7 +52,16 @@ final class CountrySelect extends GenericFormElement
             ->getTwoLetterIsoCode();
     }
 
-    private function getServerRequest(): ServerRequest
+    private function isBackendApplicationType(): bool
+    {
+        if (\class_exists(ApplicationType::class)) {
+            return ApplicationType::fromRequest($this->getServerRequest())->isBackend();
+        }
+
+        return TYPO3_MODE === 'BE';
+    }
+
+    private function getServerRequest(): ServerRequestInterface
     {
         return $GLOBALS['TYPO3_REQUEST'];
     }
