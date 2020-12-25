@@ -17,7 +17,6 @@ use Symfony\Component\Intl\Countries;
 use TYPO3\CMS\Core\EventDispatcher\EventDispatcher;
 use TYPO3\CMS\Core\Information\Typo3Version;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Extbase\Object\ObjectManager;
 use TYPO3\CMS\Extbase\SignalSlot\Dispatcher;
 
 /**
@@ -27,17 +26,17 @@ final class CountryService
 {
     public function getCountries(string $languageTwoLetterIsoCode = 'en', string $identifier = ''): array
     {
-        $objectManager = GeneralUtility::makeInstance(ObjectManager::class);
-
         $countries = Countries::getNames($languageTwoLetterIsoCode);
         $event = new CountriesModificationEvent($countries, $identifier, $languageTwoLetterIsoCode);
 
         if ((new Typo3Version())->getMajorVersion() >= 10) {
-            $eventDispatcher = $objectManager->get(EventDispatcher::class);
+            /** @var EventDispatcher $eventDispatcher */
+            $eventDispatcher = GeneralUtility::makeInstance(EventDispatcher::class);
             $event = $eventDispatcher->dispatch($event);
         }
 
-        $signalSlotDispatcher = $objectManager->get(Dispatcher::class);
+        /** @var Dispatcher $signalSlotDispatcher */
+        $signalSlotDispatcher = GeneralUtility::makeInstance(Dispatcher::class);
         $signalSlotDispatcher->dispatch(CountrySelect::class, 'modifyCountries', [$event]);
 
         return $event->getCountries();
