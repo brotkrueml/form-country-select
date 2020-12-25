@@ -12,9 +12,9 @@
     "require": {
         "php": ">=7.2",
         "symfony/intl": "^4.3 || ^5.0",
-        "typo3/cms-core": "^9.5 || ^10.4",
-        "typo3/cms-extbase": "^9.5 || ^10.4",
-        "typo3/cms-form": "^9.5 || ^10.4"
+        "typo3/cms-core": "^9.5 || ^10.4 || ^11.0",
+        "typo3/cms-extbase": "^9.5 || ^10.4 || ^11.0",
+        "typo3/cms-form": "^9.5 || ^10.4 || ^11.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.16",

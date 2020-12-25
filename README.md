@@ -9,7 +9,7 @@ Framework which displays a select box with all countries from the ISO
 3166-1 standard. The country list is localised according to the language
 of the website page.
 
-The extension supports TYPO3 v9 LTS and TYPO3 v10 LTS.
+The extension supports TYPO3 v9 LTS, TYPO3 v10 LTS and TYPO3 v11.
 
 [Documentation](https://docs.typo3.org/p/brotkrueml/form-country-select/master/en-us/) |
 [Changelog](https://github.com/brotkrueml/form-country-select/blob/master/CHANGELOG.md) |

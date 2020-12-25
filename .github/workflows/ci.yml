@@ -17,7 +17,13 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        php-versions: ['7.2', '7.3', '7.4']
+        php-versions: ['7.4']
+        typo3-versions: ['^9', '^10', '^11']
+        include:
+          - php-versions: 7.2
+            typo3-versions: ^9
+          - php-versions: 7.2
+            typo3-versions: ^10
     steps:
       - name: Check out repository
         uses: actions/checkout@v2
@@ -41,7 +47,8 @@ jobs:
       - name: Install composer dependencies
         run: |
           composer --version
-          composer install --no-progress --no-suggest --prefer-dist --optimize-autoloader
+          composer require typo3/cms-core=${{ matrix.typo3-versions }} --no-progress --prefer-dist --optimize-autoloader
+          git checkout composer.json
       - name: Run PHP linter
         run: |
           find . -name \*.php  ! -path "./.Build/*" -exec php -l {} \;
