@@ -15,8 +15,8 @@ use Brotkrueml\FormCountrySelect\Domain\Model\FormElements\CountrySelect;
 use Brotkrueml\FormCountrySelect\Event\CountriesModificationEvent;
 use Symfony\Component\Intl\Countries;
 use TYPO3\CMS\Core\EventDispatcher\EventDispatcher;
+use TYPO3\CMS\Core\Information\Typo3Version;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Core\Utility\VersionNumberUtility;
 use TYPO3\CMS\Extbase\Object\ObjectManager;
 use TYPO3\CMS\Extbase\SignalSlot\Dispatcher;
 
@@ -32,7 +32,7 @@ final class CountryService
         $countries = Countries::getNames($languageTwoLetterIsoCode);
         $event = new CountriesModificationEvent($countries, $identifier, $languageTwoLetterIsoCode);
 
-        if (VersionNumberUtility::convertVersionNumberToInteger(TYPO3_branch) >= 10000000) {
+        if ((new Typo3Version())->getMajorVersion() >= 10) {
             $eventDispatcher = $objectManager->get(EventDispatcher::class);
             $event = $eventDispatcher->dispatch($event);
         }
