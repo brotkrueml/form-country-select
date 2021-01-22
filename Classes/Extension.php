@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * This file is part of the "form_country_select" extension for TYPO3 CMS.
  *
@@ -7,10 +9,12 @@
  * LICENSE.txt file that was distributed with this source code.
  */
 
-defined('TYPO3_MODE') || die();
+namespace Brotkrueml\FormCountrySelect;
 
-TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
-    Brotkrueml\FormCountrySelect\Extension::KEY,
-    'Configuration/TypoScript',
-    'Form Country Select'
-);
+/**
+ * @internal
+ */
+final class Extension
+{
+    public const KEY = 'form_country_select';
+}
