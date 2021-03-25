@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xliff version="1.0">
-  <file source-language="en" datatype="plaintext" original="EXT:form_country_select/Resources/Private/Language/Backend.xlf" date="2019-12-26T19:07:19Z" target-language="fr">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" datatype="plaintext" original="EXT:form_country_select/Resources/Private/Language/Backend.xlf" date="2019-12-26T19:07:19Z" product-name="form_country_select" target-language="fr">
     <body>
       <trans-unit id="formEditor.elements.CountrySelect.label" resname="formEditor.elements.CountrySelect.label" approved="yes">
         <source><![CDATA[Country select]]></source>
