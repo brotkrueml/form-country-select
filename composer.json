@@ -18,9 +18,9 @@
     },
     "require-dev": {
         "clue/phar-composer": "^1.2",
-        "friendsofphp/php-cs-fixer": "^2.16",
-        "phpunit/phpunit": "^8.5 || ^9.2",
-        "typo3/coding-standards": "^0.2"
+        "friendsofphp/php-cs-fixer": "^2.19",
+        "phpunit/phpunit": "^8.5 || ^9.5",
+        "typo3/coding-standards": "^0.3"
     },
     "autoload": {
         "psr-4": {
