@@ -48,9 +48,7 @@ jobs:
           restore-keys: ${{ runner.os }}-composer-
       - name: Install composer dependencies
         run: |
-          composer --version
           composer require typo3/cms-core=${{ matrix.typo3-versions }} --no-progress --prefer-dist --optimize-autoloader
-          git checkout composer.json
       - name: Normalize composer.json
         run: |
           composer normalize --dry-run
