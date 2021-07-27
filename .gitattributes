@@ -7,5 +7,6 @@
 /Build/ export-ignore
 /Documentation/ export-ignore
 /CHANGELOG.md export-ignore
+/Makefile export-ignore
 /README.md export-ignore
 /Tests/ export-ignore
