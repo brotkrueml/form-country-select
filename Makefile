@@ -1,5 +1,5 @@
 .PHONY: qa
-qa: coding-standards tests
+qa: coding-standards tests yaml-lint
 
 .PHONY: build-intl
 build-intl: vendor
@@ -21,6 +21,10 @@ vendor: composer.json composer.lock
 .PHONY: xlf-lint
 xlf-lint:
 	xmllint --schema Resources/Private/Language/xliff-core-1.2-strict.xsd --noout Resources/Private/Language/*.xlf
+
+.PHONY: yaml-lint
+yaml-lint: vendor
+	find -regex '.*\.ya?ml' ! -path "./.Build/*" -exec .Build/bin/yaml-lint -v {} \;
 
 .PHONY: zip
 zip:

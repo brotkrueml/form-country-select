@@ -21,6 +21,7 @@
         "ergebnis/composer-normalize": "^2.15",
         "friendsofphp/php-cs-fixer": "^2.19",
         "phpunit/phpunit": "^8.5 || ^9.5",
+        "symfony/yaml": "^4.4 || ^5.3",
         "typo3/coding-standards": "^0.3"
     },
     "config": {
