@@ -37,18 +37,12 @@ selection list.
 The content of this document is related to TYPO3 CMS,
 a GNU/GPL CMS/Framework available from `typo3.org <https://typo3.org/>`_ .
 
-**Community documentation**
-
-This documentation is community documentation for the TYPO3 extension {extension.name}
-
-It is maintained as part of this third party extension.
-
-If you find an error or something is missing, please:
-`Report a Problem <https://github.com/TYPO3-Documentation/TYPO3CMS-Example-ExtensionManual/issues/new>`__
-
 **Extension manual**
 
-This documentation is for the TYPO3 extension <extkey>.
+This documentation is for the TYPO3 extension form_country_select.
+
+If you find an error or something is missing, please:
+`Report a Problem <https://github.com/brotkrueml/form-country-select/issues>`_
 
 **For contributors**
 
