@@ -1,0 +1,10 @@
+{
+    "description": "Dependencies of EXT:form_country_select for TYPO3 non-composer installations",
+    "require": {
+        "symfony/intl": "^5.3"
+    },
+    "replace": {
+        "symfony/deprecation-contracts": "*",
+        "symfony/polyfill-php80": "*"
+    }
+}

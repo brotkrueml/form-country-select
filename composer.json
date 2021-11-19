@@ -17,7 +17,6 @@
         "typo3/cms-form": "^9.5.16 || ^10.4 || ^11.5"
     },
     "require-dev": {
-        "clue/phar-composer": "^1.2",
         "ergebnis/composer-normalize": "^2.15",
         "friendsofphp/php-cs-fixer": "^2.19",
         "phpunit/phpunit": "^8.5 || ^9.5",

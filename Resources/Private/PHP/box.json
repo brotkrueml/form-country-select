@@ -1,0 +1,7 @@
+{
+	"blacklist": [
+		"box.json"
+	],
+	"main": false,
+	"output": "symfony-intl.phar"
+}

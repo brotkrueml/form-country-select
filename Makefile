@@ -3,7 +3,7 @@ qa: coding-standards tests yaml-lint
 
 .PHONY: build-intl
 build-intl: vendor
-	php -d phar.readonly=off .Build/bin/phar-composer build symfony/intl Resources/Private/PHP/symfony-intl.phar
+	tools/box compile -c Resources/Private/PHP/box.json
 
 .PHONY: coding-standards
 coding-standards: vendor
