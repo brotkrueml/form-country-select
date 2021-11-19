@@ -1,9 +1,17 @@
 .PHONY: qa
-qa: cs tests yaml-lint
+qa: cs tests yaml-lint changelog
 
 .PHONY: build-intl
 build-intl: vendor
 	tools/box compile -c Resources/Private/PHP/box.json
+
+# See: https://github.com/crossnox/m2r2
+.PHONY: changelog
+changelog:
+	m2r2 CHANGELOG.md && \
+	echo ".. _changelog:" | cat - CHANGELOG.rst > /tmp/CHANGELOG.rst && \
+	mv /tmp/CHANGELOG.rst Documentation/Changelog/Index.rst && \
+	rm CHANGELOG.rst
 
 .PHONY: coding-standards
 cs: vendor

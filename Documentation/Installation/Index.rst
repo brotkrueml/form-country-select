@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 .. highlight:: shell
 
 .. _installation:
@@ -11,7 +11,7 @@ Target group: **Administrators**
 
 .. note::
 
-   The extension supports TYPO3 v9 LTS TYPO3 v10 LTS and TYPO3 v11.
+   The extension supports TYPO3 v9 LTS, TYPO3 v10 LTS and TYPO3 v11 LTS.
 
 The recommended way to install this extension is by using Composer. In your
 Composer based TYPO3 project root, just type::
@@ -20,8 +20,9 @@ Composer based TYPO3 project root, just type::
 
 and the recent stable version will be installed.
 
-You can also install the extension from the `TYPO3 Extension Repository (TER)
-<https://extensions.typo3.org/extension/form_country_select/>`_.
+You can also install the extension from the `TYPO3 Extension Repository (TER)`_.
+See :ref:`t3gettingstarted:extensions_legacy_management` for a manual how to
+install an extension.
 
 
 .. _include-static-typoscript:
@@ -41,6 +42,9 @@ The extension ships some TypoScript code which needs to be included.
 #. Select :guilabel:`Form Country Select (form_country_select)` from the
    available items at the field :guilabel:`Include static (from extensions):`
 
-.. figure:: ../Images/include-static-template.png
+.. figure:: /Images/include-static-template.png
    :class: with-shadow
    :alt: Include static TypoScript
+
+
+.. _TYPO3 Extension Repository (TER): https://extensions.typo3.org/extension/form_country_select/

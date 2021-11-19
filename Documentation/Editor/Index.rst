@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 
 .. _for-editors:
 
@@ -32,7 +32,7 @@ Configuration of the element
 
 Now you can configure the country select element:
 
-.. figure:: ../Images/element-options.png
+.. figure:: /Images/element-options.png
    :class: with-shadow
    :alt: Element options
 
@@ -50,8 +50,11 @@ First option (empty value)
    list (like the single select element).
 
 Default value
-   If desired, insert here the `alpha-2 code <https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2>`__
-   of the country you would like to be selected by default (e.g. DE for Germany).
+   If desired, insert here the `alpha-2 code`_ of the country you would like to
+   be selected by default (e.g. DE for Germany).
 
 Required field
    If an option should be selected then activate this checkbox.
+
+
+.. _alpha-2 code: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2

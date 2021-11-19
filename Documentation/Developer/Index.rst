@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 
 .. _for-developers:
 
@@ -18,7 +18,7 @@ It is possible to change the list of options in the country selection box. This
 may be the case if you want to reduce the number of countries, change the order
 of the countries or perhaps add some "unofficial" countries.
 
-For TYPO3 v9/v10 you can use a signal/slot, for TYPO3 v10+ there is a PSR-14
+For TYPO3 v9/v10/v11 you can use a signal/slot, for TYPO3 v10+ there is a PSR-14
 event.
 
 Both versions receive the
@@ -32,9 +32,7 @@ following methods:
 
 .. option:: ->getCountries(): array
 
-   Returns the list of countries in the format:
-
-   ::
+   Returns the list of countries in the format::
 
       [
          'DE' => 'Germany',
@@ -44,9 +42,9 @@ following methods:
 
 .. option:: ->getLanguageTwoLetterIsoCode(): string
 
-   Get the `two letter ISO code
-   <https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`_ of the language of
-   the page (e.g. ``en`` for English or ``de`` for German).
+   .. versionadded:: 1.2.0
+      Get the `two letter ISO code`_ of the language of the page (e.g. ``en``
+      for English or ``de`` for German).
 
 .. option:: ->setCountries(array $countries): void
 
@@ -54,7 +52,7 @@ following methods:
 
 
 .. attention::
-   In TYPO3 v10 you can use signal/slots and PSR-14 events. If you use both,
+   In TYPO3 v10/v11 you can use signal/slots and PSR-14 events. If you use both,
    the PSR-14 events are called first, and the signal/slots operate on the
    modified event from the PSR-14 events.
 
@@ -77,7 +75,7 @@ Example
 So, let's start with an example. Imagine that you want to display the most
 common English-speaking countries at the top of the option list.
 
-.. figure:: ../Images/element-options-order-changed.png
+.. figure:: /Images/element-options-order-changed.png
    :class: with-shadow
    :alt: Country list with changed order
 
@@ -130,11 +128,8 @@ common English-speaking countries at the top of the option list.
                  event: Brotkrueml\FormCountrySelect\Event\CountriesModificationEvent
 
 .. seealso::
-
-   You can find more information in the blog article
-   `PSR-14 Events in TYPO3 <https://usetypo3.com/psr-14-events.html>`_
-   and the official
-   `TYPO3 documentation <https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/ApiOverview/Hooks/EventDispatcher/Index.html>`_.
+   You can find more information in the blog article `PSR-14 Events in TYPO3`_
+   and the official :ref:`TYPO3 documentation <t3coreapi:EventDispatcher>`.
 
 
 .. _modification-country-list-signal-slot:
@@ -148,8 +143,8 @@ class enables you to modify the options in the country selection box.
 
 .. note::
    If you use TYPO3 v10 or higher you should use the PSR-14 event above. The
-   signal/slot will be deleted when the compatibility of this extension for
-   TYPO3 v9 is removed in future versions.
+   signal/slot will be removed when the support for TYPO3 v9 is stopped in
+   version 2.0.0.
 
 Example
 ~~~~~~~
@@ -212,9 +207,8 @@ common English-speaking countries at the top of the option list.
    forth argument the method name of that class.
 
 .. seealso::
-
    You can find more information about signal/slots in the blog article
-   `Signals and Slots – Extend TYPO3 Functionality <https://typo3worx.eu/2017/07/signals-and-slots-in-typo3/>`_.
+   `Signals and Slots – Extend TYPO3 Functionality`_.
 
 
 .. _service-class:
@@ -222,11 +216,11 @@ common English-speaking countries at the top of the option list.
 Country list usage in other scenarios
 =====================================
 
+.. versionadded:: 1.1.0
+
 It might be helpful to use the country list in other scenarios, e.g. an
 Extbase form – especially if a signal/PSR-14 event has been assigned. For this
-case a :php:`CountryService` class is available:
-
-::
+case a :php:`CountryService` class is available::
 
    use Brotkrueml\FormCountrySelect\Service\CountryService;
 
@@ -246,3 +240,8 @@ The :php:`->getCountries()` method has two optional arguments:
    by signals/PSR-14 events, where you can work with the country list dependent
    on this identifier.
    Default: empty string.
+
+
+.. _PSR-14 Events in TYPO3: https://usetypo3.com/psr-14-events.html
+.. _Signals and Slots – Extend TYPO3 Functionality: https://typo3worx.eu/2017/07/signals-and-slots-in-typo3/
+.. _two letter ISO code: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
