@@ -1,13 +1,13 @@
 .PHONY: qa
-qa: coding-standards tests yaml-lint
+qa: cs tests yaml-lint
 
 .PHONY: build-intl
 build-intl: vendor
 	tools/box compile -c Resources/Private/PHP/box.json
 
 .PHONY: coding-standards
-coding-standards: vendor
-	.Build/bin/php-cs-fixer fix --config=.php_cs --diff
+cs: vendor
+	.Build/bin/ecs check --fix
 
 .PHONY: tests
 tests: vendor

@@ -17,11 +17,10 @@
         "typo3/cms-form": "^9.5.16 || ^10.4 || ^11.5"
     },
     "require-dev": {
+        "brotkrueml/coding-standards": "~1.1.0",
         "ergebnis/composer-normalize": "^2.15",
-        "friendsofphp/php-cs-fixer": "^2.19",
         "phpunit/phpunit": "^8.5 || ^9.5",
-        "symfony/yaml": "^4.4 || ^5.3",
-        "typo3/coding-standards": "^0.3"
+        "symfony/yaml": "^4.4 || ^5.3"
     },
     "config": {
         "bin-dir": ".Build/bin",

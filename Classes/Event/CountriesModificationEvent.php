@@ -56,7 +56,7 @@ final class CountriesModificationEvent
      *    'DE' => 'Germany',
      *    'US' => 'United States',
      * ]
-     * @param array $countries
+     * @param array<string, string> $countries
      */
     public function setCountries(array $countries): void
     {

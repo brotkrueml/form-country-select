@@ -4,9 +4,9 @@
 /.gitignore export-ignore
 /.github/ export-ignore
 /.phive export-ignore
-/.php_cs export-ignore
 /Build/ export-ignore
 /Documentation/ export-ignore
+/ecs.php export-ignore
 /CHANGELOG.md export-ignore
 /Makefile export-ignore
 /README.md export-ignore
