@@ -54,7 +54,14 @@ jobs:
           path: ${{ steps.composer-cache.outputs.dir }}
           key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.json') }}
           restore-keys: ${{ runner.os }}-composer-
-      - name: Install composer dependencies
+      - name: Install composer dependencies for PHP = 7.2
+        if: matrix.php-versions == '7.2'
+        run: |
+          composer remove --dev symplify/phpstan-rules
+          rm composer.lock
+          composer require typo3/cms-core=${{ matrix.typo3-versions }} --no-progress --prefer-dist --optimize-autoloader
+      - name: Install composer dependencies for PHP > 7.2
+        if: matrix.php-versions > '7.2'
         run: |
           composer require typo3/cms-core=${{ matrix.typo3-versions }} --no-progress --prefer-dist --optimize-autoloader
       - name: Run PHP linter
@@ -96,3 +103,6 @@ jobs:
       - name: Check coding standards
         run: |
           .Build/bin/ecs check --no-progress-bar
+      - name: Run phpstan
+        run: |
+          make phpstan

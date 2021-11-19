@@ -1,0 +1,17 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Offset 'lang' does not exist on array\\|string\\.$#"
+			count: 1
+			path: Classes/Domain/Model/FormElements/CountrySelect.php
+
+		-
+			message: "#^Parameter \\#1 \\$renderable of method Brotkrueml\\\\FormCountrySelect\\\\Domain\\\\Model\\\\FormElements\\\\CountrySelect\\:\\:getFormIdentifier\\(\\) expects TYPO3\\\\CMS\\\\Form\\\\Domain\\\\Model\\\\Renderable\\\\RenderableInterface, TYPO3\\\\CMS\\\\Form\\\\Domain\\\\Model\\\\Renderable\\\\CompositeRenderableInterface\\|null given\\.$#"
+			count: 2
+			path: Classes/Domain/Model/FormElements/CountrySelect.php
+
+		-
+			message: "#^Call to an undefined method object\\:\\:getCountries\\(\\)\\.$#"
+			count: 1
+			path: Classes/Service/CountryService.php
+

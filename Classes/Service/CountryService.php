@@ -23,6 +23,7 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\SignalSlot\Dispatcher;
 
 if (! Environment::isComposerMode() && ! \class_exists(Countries::class)) {
+    // @phpstan-ignore-next-line
     @include 'phar://' . ExtensionManagementUtility::extPath(Extension::KEY) . 'Resources/Private/PHP/symfony-intl.phar/vendor/autoload.php';
 }
 
@@ -31,6 +32,9 @@ if (! Environment::isComposerMode() && ! \class_exists(Countries::class)) {
  */
 final class CountryService
 {
+    /**
+     * @return array<string, string>
+     */
     public function getCountries(string $languageTwoLetterIsoCode = 'en', string $identifier = ''): array
     {
         $countries = Countries::getNames($languageTwoLetterIsoCode);

@@ -22,8 +22,9 @@ use TYPO3\CMS\Form\Domain\Model\Renderable\RenderableInterface;
 
 final class CountrySelect extends GenericFormElement
 {
-    public function initializeFormElement()
+    public function initializeFormElement(): void
     {
+        /** @var CountryService $countryService */
         $countryService = GeneralUtility::makeInstance(CountryService::class);
 
         $this->setProperty('options', $countryService->getCountries(

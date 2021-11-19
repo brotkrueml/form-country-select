@@ -1,5 +1,5 @@
 .PHONY: qa
-qa: cs tests yaml-lint changelog
+qa: cs phpstan tests yaml-lint changelog
 
 .PHONY: build-intl
 build-intl: vendor
@@ -16,6 +16,10 @@ changelog:
 .PHONY: coding-standards
 cs: vendor
 	.Build/bin/ecs check --fix
+
+.PHONY: phpstan
+phpstan: vendor
+	.Build/bin/phpstan analyse
 
 .PHONY: tests
 tests: vendor

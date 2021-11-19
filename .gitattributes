@@ -9,6 +9,7 @@
 /ecs.php export-ignore
 /CHANGELOG.md export-ignore
 /Makefile export-ignore
+/phpstan* export-ignore
 /README.md export-ignore
 /Resources/Private/PHP/ export-ignore
 /Tests/ export-ignore
