@@ -11,6 +11,7 @@
 /Makefile export-ignore
 /phpstan* export-ignore
 /README.md export-ignore
+/rector.php export-ignore
 /Resources/Private/PHP/ export-ignore
 /Tests/ export-ignore
 *.xsd export-ignore

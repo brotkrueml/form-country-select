@@ -106,3 +106,6 @@ jobs:
       - name: Run phpstan
         run: |
           make phpstan
+      - name: Run rector
+        run: |
+          make rector-dry
