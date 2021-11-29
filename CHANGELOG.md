@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.4.0] - 2021-11-29
+
 ### Added
 - Compatibility with Symfony 6
 
@@ -46,7 +48,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Form element "Country select"
 - Signal/slot and PSR-14 event for modifying the country list
 
-[Unreleased]: https://github.com/brotkrueml/form-country-select/compare/v1.3.1...HEAD
+[Unreleased]: https://github.com/brotkrueml/form-country-select/compare/v1.4.0...HEAD
+[1.4.0]: https://github.com/brotkrueml/form-country-select/compare/v1.3.1...v1.4.0
 [1.3.1]: https://github.com/brotkrueml/form-country-select/compare/v1.3.0...v1.3.1
 [1.3.0]: https://github.com/brotkrueml/form-country-select/compare/v1.2.0...v1.3.0
 [1.2.0]: https://github.com/brotkrueml/form-country-select/compare/v1.1.1...v1.2.0
