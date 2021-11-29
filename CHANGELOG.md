@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Compatibility with Symfony 6
 
+### Updated
+- symfony/intl to version 5.4.0 for non-composer installations
+
 ## [1.3.1] - 2021-09-07
 
 ### Fixed

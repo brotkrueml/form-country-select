@@ -17,6 +17,12 @@ Added
 
 * Compatibility with Symfony 6
 
+Updated
+^^^^^^^
+
+
+* symfony/intl to version 5.4.0 for non-composer installations
+
 `1.3.1 <https://github.com/brotkrueml/form-country-select/compare/v1.3.0...v1.3.1>`_ - 2021-09-07
 -----------------------------------------------------------------------------------------------------
 

@@ -1,7 +1,7 @@
 {
     "description": "Dependencies of EXT:form_country_select for TYPO3 non-composer installations",
     "require": {
-        "symfony/intl": "^5.3"
+        "symfony/intl": "^5.4"
     },
     "replace": {
         "symfony/deprecation-contracts": "*",

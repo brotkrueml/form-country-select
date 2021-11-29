@@ -3,6 +3,7 @@ qa: cs phpstan rector-dry tests yaml-lint changelog
 
 .PHONY: build-intl
 build-intl: vendor
+	composer update --no-dev --prefer-dist --optimize-autoloader --working-dir=Resources/Private/PHP
 	tools/box compile -c Resources/Private/PHP/box.json
 
 # See: https://github.com/crossnox/m2r2
