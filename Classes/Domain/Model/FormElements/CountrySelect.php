@@ -45,7 +45,8 @@ final class CountrySelect extends GenericFormElement
     private function getLanguageCode(): string
     {
         if ($this->isBackendApplicationType()) {
-            return $this->getBackendUser()->uc['lang'];
+            $code = $this->getBackendUser()->uc['lang'];
+            return $code === 'default' ? 'en' : $code;
         }
 
         return $this->getServerRequest()

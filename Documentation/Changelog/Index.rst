@@ -11,6 +11,12 @@ and this project adheres to `Semantic Versioning <https://semver.org/spec/v2.0.0
 `Unreleased <https://github.com/brotkrueml/form-country-select/compare/v1.4.0...HEAD>`_
 -------------------------------------------------------------------------------------------
 
+Fixed
+^^^^^
+
+
+* Default language of backend user throws exception in form preview
+
 `1.4.0 <https://github.com/brotkrueml/form-country-select/compare/v1.3.1...v1.4.0>`_ - 2021-11-29
 -----------------------------------------------------------------------------------------------------
 

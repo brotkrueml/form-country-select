@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- Default language of backend user throws exception in form preview
+
 ## [1.4.0] - 2021-11-29
 
 ### Added
