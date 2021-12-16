@@ -17,7 +17,7 @@
         "typo3/cms-form": "^9.5.16 || ^10.4 || ^11.5"
     },
     "require-dev": {
-        "brotkrueml/coding-standards": "~1.1.0",
+        "brotkrueml/coding-standards": "~1.2.0",
         "ergebnis/composer-normalize": "^2.18",
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan": "^0.12.99",
