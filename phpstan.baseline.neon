@@ -10,8 +10,3 @@ parameters:
 			count: 2
 			path: Classes/Domain/Model/FormElements/CountrySelect.php
 
-		-
-			message: "#^Call to an undefined method object\\:\\:getCountries\\(\\)\\.$#"
-			count: 1
-			path: Classes/Service/CountryService.php
-

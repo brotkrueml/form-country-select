@@ -43,6 +43,7 @@ final class CountryService
         if ((new Typo3Version())->getMajorVersion() >= 10) {
             /** @var EventDispatcher $eventDispatcher */
             $eventDispatcher = GeneralUtility::makeInstance(EventDispatcher::class);
+            /** @var CountriesModificationEvent $event */
             $event = $eventDispatcher->dispatch($event);
         }
 
