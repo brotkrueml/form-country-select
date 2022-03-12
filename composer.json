@@ -9,6 +9,11 @@
             "role": "Developer"
         }
     ],
+    "support": {
+        "issues": "https://github.com/brotkrueml/form-country-select/issues",
+        "source": "https://github.com/brotkrueml/form-country-select",
+        "docs": "https://docs.typo3.org/p/brotkrueml/form-country-select/main/en-us/"
+    },
     "require": {
         "php": ">=7.2",
         "symfony/intl": "^4.3 || ^5.0 || ^6.0",
