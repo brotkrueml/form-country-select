@@ -12,7 +12,7 @@ What does it do?
 ================
 
 The extension provides a form element for the :ref:`TYPO3 Form Framework
-<t3form:introduction>` which displays a select box with all countries from the
+<ext_form:introduction>` which displays a select box with all countries from the
 `ISO 3166-1`_ standard. The country list is localised according to the language
 of the website page.
 

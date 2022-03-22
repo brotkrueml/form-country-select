@@ -1,5 +1,5 @@
 .. include:: /Includes.rst.txt
-.. highlight:: shell
+.. highlight:: bash
 
 .. _maintenance:
 
@@ -34,14 +34,14 @@ with the dependency.
 
 #. Update the symfony/intl package
 
-   .. code-block:: shell
+   ::
 
       cd Resources/Private/PHP
       composer update
 
 #. Build the phar archive
 
-   .. code-block:: shell
+   ::
 
       make build-intl
 
