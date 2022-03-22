@@ -28,4 +28,4 @@ TYPO3:
               FormElement-CountrySelect: 'Stage/SimpleTemplate'
             dynamicRequireJsModules:
               additionalViewModelModules:
-                - 'TYPO3/CMS/FormCountrySelect/Backend/FormEditor/CountrySelectViewModel'
+                1647970204: 'TYPO3/CMS/FormCountrySelect/Backend/FormEditor/CountrySelectViewModel'

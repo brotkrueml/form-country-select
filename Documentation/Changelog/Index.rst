@@ -11,6 +11,12 @@ and this project adheres to `Semantic Versioning <https://semver.org/spec/v2.0.0
 `Unreleased <https://github.com/brotkrueml/form-country-select/compare/v1.4.1...HEAD>`_
 -------------------------------------------------------------------------------------------
 
+Fixed
+^^^^^
+
+
+* Display form element in form editor in combination with other custom form elements correctly (#13)
+
 `1.4.1 <https://github.com/brotkrueml/form-country-select/compare/v1.4.0...v1.4.1>`_ - 2021-12-16
 -----------------------------------------------------------------------------------------------------
 
