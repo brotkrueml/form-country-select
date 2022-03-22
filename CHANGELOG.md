@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.4.2] - 2022-03-22
+
 ### Fixed
 - Display form element in form editor in combination with other custom form elements correctly (#13)
 
@@ -56,7 +58,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Form element "Country select"
 - Signal/slot and PSR-14 event for modifying the country list
 
-[Unreleased]: https://github.com/brotkrueml/form-country-select/compare/v1.4.1...HEAD
+[Unreleased]: https://github.com/brotkrueml/form-country-select/compare/v1.4.2...HEAD
+[1.4.2]: https://github.com/brotkrueml/form-country-select/compare/v1.4.1...v1.4.2
 [1.4.1]: https://github.com/brotkrueml/form-country-select/compare/v1.4.0...v1.4.1
 [1.4.0]: https://github.com/brotkrueml/form-country-select/compare/v1.3.1...v1.4.0
 [1.3.1]: https://github.com/brotkrueml/form-country-select/compare/v1.3.0...v1.3.1
