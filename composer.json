@@ -25,7 +25,7 @@
         "brotkrueml/coding-standards": "~2.0.2",
         "ergebnis/composer-normalize": "~2.18.0",
         "phpstan/extension-installer": "^1.1",
-        "phpstan/phpstan": "1.4.10",
+        "phpstan/phpstan": "1.8.6",
         "phpunit/phpunit": "^8.5 || ^9.5",
         "rector/rector": "0.12.18",
         "saschaegerer/phpstan-typo3": "^1.1",
