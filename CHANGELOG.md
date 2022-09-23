@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 - Signal for modification of the country list (#10)
-- Compatibility with TYPO3 v9 (#10)
+- Compatibility with TYPO3 v9 and v10 (#10, #14)
 - Compatibility with PHP 7.2 and 7.3 (#11)
 
 ## [1.4.2] - 2022-03-22

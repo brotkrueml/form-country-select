@@ -10,8 +10,12 @@ Framework which displays a select box with all countries from the ISO
 3166-1 standard. The country list is localised according to the language
 of the website page.
 
-The extension supports TYPO3 v10 LTS and TYPO3 v11 LTS. Use version 1.x for support
-with TYPO3 v9 LTS.
+## Versions and support
+
+| Latest release | TYPO3      | PHP       | Updates will contain                     |
+|----------------|------------|-----------|------------------------------------------|
+| 2.x            | 11.5       | 7.4 - 8.1 | Features, security and bug fixes         |
+| 1.x            | 9.5 - 11.5 | 7.2 - 8.1 | Security fixes (EOL expected April 2023) |
 
 [Documentation](https://docs.typo3.org/p/brotkrueml/form-country-select/main/en-us/) |
 [Changelog](https://github.com/brotkrueml/form-country-select/blob/main/CHANGELOG.md) |

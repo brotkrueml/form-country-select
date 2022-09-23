@@ -16,10 +16,10 @@
     },
     "require": {
         "php": ">=7.4",
-        "symfony/intl": "^4.3 || ^5.0 || ^6.0",
-        "typo3/cms-core": "^10.4.11 || ^11.5",
-        "typo3/cms-extbase": "^10.4.11 || ^11.5",
-        "typo3/cms-form": "^10.4.11 || ^11.5"
+        "symfony/intl": "^5.4 || ^6.0",
+        "typo3/cms-core": "^11.5",
+        "typo3/cms-extbase": "^11.5",
+        "typo3/cms-form": "^11.5"
     },
     "require-dev": {
         "brotkrueml/coding-standards": "~2.0.2",
@@ -29,7 +29,7 @@
         "phpunit/phpunit": "^9.5",
         "rector/rector": "0.14.3",
         "saschaegerer/phpstan-typo3": "^1.1",
-        "symfony/yaml": "^4.4 || ^5.3 || ^6.0",
+        "symfony/yaml": "^5.4 || ^6.0",
         "symplify/phpstan-rules": "^10.1"
     },
     "autoload": {
