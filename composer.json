@@ -27,7 +27,7 @@
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan": "1.8.6",
         "phpunit/phpunit": "^8.5 || ^9.5",
-        "rector/rector": "0.12.18",
+        "rector/rector": "0.14.3",
         "saschaegerer/phpstan-typo3": "^1.1",
         "symfony/yaml": "^4.4 || ^5.3 || ^6.0",
         "symplify/phpstan-rules": "^10.1"
