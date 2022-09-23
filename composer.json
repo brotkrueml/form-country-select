@@ -37,6 +37,11 @@
             "Brotkrueml\\FormCountrySelect\\": "Classes"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Brotkrueml\\FormCountrySelect\\Tests\\": "Tests"
+        }
+    },
     "config": {
         "allow-plugins": {
             "ergebnis/composer-normalize": true,
