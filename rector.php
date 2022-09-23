@@ -10,7 +10,7 @@ use Rector\Set\ValueObject\LevelSetList;
 use Rector\Set\ValueObject\SetList;
 
 return static function (RectorConfig $config): void {
-    $config->import(LevelSetList::UP_TO_PHP_72);
+    $config->import(LevelSetList::UP_TO_PHP_74);
     $config->import(SetList::CODE_QUALITY);
     $config->import(SetList::DEAD_CODE);
     $config->import(SetList::EARLY_RETURN);
@@ -20,7 +20,7 @@ return static function (RectorConfig $config): void {
     $config->import(PHPUnitSetList::PHPUNIT_SPECIFIC_METHOD);
     $config->import(PHPUnitSetList::PHPUNIT_YIELD_DATA_PROVIDER);
 
-    $config->phpVersion(PhpVersion::PHP_72);
+    $config->phpVersion(PhpVersion::PHP_74);
 
     $config->autoloadPaths([
         __DIR__ . '/.Build/vendor/autoload.php',

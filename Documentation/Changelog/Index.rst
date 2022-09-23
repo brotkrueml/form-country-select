@@ -17,6 +17,7 @@ Removed
 
 * Signal for modification of the country list (#10)
 * Compatibility with TYPO3 v9 (#10)
+* Compatibility with PHP 7.2 and 7.3 (#11)
 
 `1.4.2 <https://github.com/brotkrueml/form-country-select/compare/v1.4.1...v1.4.2>`_ - 2022-03-22
 -----------------------------------------------------------------------------------------------------

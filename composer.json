@@ -15,7 +15,7 @@
         "docs": "https://docs.typo3.org/p/brotkrueml/form-country-select/main/en-us/"
     },
     "require": {
-        "php": ">=7.2",
+        "php": ">=7.4",
         "symfony/intl": "^4.3 || ^5.0 || ^6.0",
         "typo3/cms-core": "^10.4.11 || ^11.5",
         "typo3/cms-extbase": "^10.4.11 || ^11.5",
@@ -23,10 +23,10 @@
     },
     "require-dev": {
         "brotkrueml/coding-standards": "~2.0.2",
-        "ergebnis/composer-normalize": "~2.18.0",
+        "ergebnis/composer-normalize": "~2.28.3",
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan": "1.8.6",
-        "phpunit/phpunit": "^8.5 || ^9.5",
+        "phpunit/phpunit": "^9.5",
         "rector/rector": "0.14.3",
         "saschaegerer/phpstan-typo3": "^1.1",
         "symfony/yaml": "^4.4 || ^5.3 || ^6.0",

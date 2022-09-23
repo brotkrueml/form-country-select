@@ -16,17 +16,9 @@ final class CountriesModificationEvent
     /**
      * @var array<string, string>
      */
-    private $countries;
-
-    /**
-     * @var string
-     */
-    private $formIdentifier;
-
-    /**
-     * @var string
-     */
-    private $languageTwoLetterIsoCode;
+    private array $countries;
+    private string $formIdentifier;
+    private string $languageTwoLetterIsoCode;
 
     /**
      * @param array<string, string> $countries
