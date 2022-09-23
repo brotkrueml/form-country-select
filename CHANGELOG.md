@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Removed
+- Signal for modification of the country list (#10)
+- Compatibility with TYPO3 v9 (#10)
+
 ## [1.4.2] - 2022-03-22
 
 ### Fixed

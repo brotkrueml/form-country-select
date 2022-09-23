@@ -3,3 +3,7 @@ services:
     autowire: false
     autoconfigure: true
     public: false
+
+  Brotkrueml\FormCountrySelect\:
+    resource: '../Classes/*'
+    exclude: '../Classes/Extension.php'

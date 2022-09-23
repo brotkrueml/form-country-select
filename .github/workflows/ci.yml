@@ -22,12 +22,9 @@ jobs:
         php-versions:
           - '7.4'
         typo3-versions:
-          - '^9'
           - '^10'
           - '^11'
         include:
-          - php-versions: 7.2
-            typo3-versions: ^9
           - php-versions: 7.2
             typo3-versions: ^10
           - php-versions: 8.0

@@ -25,7 +25,6 @@ Why is Kosovo missing in the list of countries?
 The International Organisation for Standardisation (ISO) has not yet assigned
 an official country code to Kosovo. In the meantime you can use ``XK`` as a
 temporary code and add the country to the select list with a
-:ref:`signal/slot <modification-country-list-signal-slot>` or
 :ref:`PSR-14 event <modification-country-list-psr-14>`. You can find more
 information on the `GeoNames Blog`_.
 
@@ -34,8 +33,7 @@ I would like to add some regions to the list of countries. How can I achieve tha
 ==================================================================================
 
 Have a look at the official `ISO 3166-2`_ standard for provinces or states. Then
-use a :ref:`signal/slot <modification-country-list-signal-slot>` or
-:ref:`PSR-14 event <modification-country-list-psr-14>` to add those to the
+use a :ref:`PSR-14 event <modification-country-list-psr-14>` to add those to the
 country list.
 
 

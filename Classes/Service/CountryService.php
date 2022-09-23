@@ -11,16 +11,13 @@ declare(strict_types=1);
 
 namespace Brotkrueml\FormCountrySelect\Service;
 
-use Brotkrueml\FormCountrySelect\Domain\Model\FormElements\CountrySelect;
 use Brotkrueml\FormCountrySelect\Event\CountriesModificationEvent;
 use Brotkrueml\FormCountrySelect\Extension;
 use Symfony\Component\Intl\Countries;
 use TYPO3\CMS\Core\Core\Environment;
 use TYPO3\CMS\Core\EventDispatcher\EventDispatcher;
-use TYPO3\CMS\Core\Information\Typo3Version;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Extbase\SignalSlot\Dispatcher;
 
 if (! Environment::isComposerMode() && ! \class_exists(Countries::class)) {
     // @phpstan-ignore-next-line
@@ -39,17 +36,10 @@ final class CountryService
     {
         $countries = Countries::getNames($languageTwoLetterIsoCode);
         $event = new CountriesModificationEvent($countries, $identifier, $languageTwoLetterIsoCode);
-
-        if ((new Typo3Version())->getMajorVersion() >= 10) {
-            /** @var EventDispatcher $eventDispatcher */
-            $eventDispatcher = GeneralUtility::makeInstance(EventDispatcher::class);
-            /** @var CountriesModificationEvent $event */
-            $event = $eventDispatcher->dispatch($event);
-        }
-
-        /** @var Dispatcher $signalSlotDispatcher */
-        $signalSlotDispatcher = GeneralUtility::makeInstance(Dispatcher::class);
-        $signalSlotDispatcher->dispatch(CountrySelect::class, 'modifyCountries', [$event]);
+        /** @var EventDispatcher $eventDispatcher */
+        $eventDispatcher = GeneralUtility::makeInstance(EventDispatcher::class);
+        /** @var CountriesModificationEvent $event */
+        $event = $eventDispatcher->dispatch($event);
 
         return $event->getCountries();
     }

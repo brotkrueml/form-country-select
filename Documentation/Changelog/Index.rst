@@ -11,6 +11,13 @@ and this project adheres to `Semantic Versioning <https://semver.org/spec/v2.0.0
 `Unreleased <https://github.com/brotkrueml/form-country-select/compare/v1.4.2...HEAD>`_
 -------------------------------------------------------------------------------------------
 
+Removed
+^^^^^^^
+
+
+* Signal for modification of the country list (#10)
+* Compatibility with TYPO3 v9 (#10)
+
 `1.4.2 <https://github.com/brotkrueml/form-country-select/compare/v1.4.1...v1.4.2>`_ - 2022-03-22
 -----------------------------------------------------------------------------------------------------
 

@@ -63,11 +63,7 @@ final class CountrySelect extends GenericFormElement
 
     private function isBackendApplicationType(): bool
     {
-        if (\class_exists(ApplicationType::class)) {
-            return ApplicationType::fromRequest($this->getServerRequest())->isBackend();
-        }
-
-        return TYPO3_MODE === 'BE';
+        return ApplicationType::fromRequest($this->getServerRequest())->isBackend();
     }
 
     private function getServerRequest(): ServerRequestInterface

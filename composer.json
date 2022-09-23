@@ -17,9 +17,9 @@
     "require": {
         "php": ">=7.2",
         "symfony/intl": "^4.3 || ^5.0 || ^6.0",
-        "typo3/cms-core": "^9.5.16 || ^10.4 || ^11.5",
-        "typo3/cms-extbase": "^9.5.16 || ^10.4 || ^11.5",
-        "typo3/cms-form": "^9.5.16 || ^10.4 || ^11.5"
+        "typo3/cms-core": "^10.4.11 || ^11.5",
+        "typo3/cms-extbase": "^10.4.11 || ^11.5",
+        "typo3/cms-form": "^10.4.11 || ^11.5"
     },
     "require-dev": {
         "brotkrueml/coding-standards": "~2.0.2",
@@ -58,7 +58,7 @@
             "dev-main": "2.0.x-dev"
         },
         "typo3/cms": {
-            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "app-dir": ".Build",
             "extension-key": "form_country_select",
             "web-dir": ".Build/web"
         }
