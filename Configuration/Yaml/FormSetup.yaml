@@ -29,3 +29,5 @@ TYPO3:
             dynamicRequireJsModules:
               additionalViewModelModules:
                 1647970204: 'TYPO3/CMS/FormCountrySelect/Backend/FormEditor/CountrySelectViewModel'
+            translationFiles:
+              1647970204: 'EXT:form_country_select/Resources/Private/Language/Backend.xlf'
