@@ -14,17 +14,20 @@ on:
 
 jobs:
   build:
-    name: Build PHP
+    name: Build PHP/TYPO3
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        php-versions:
-          - '7.4'
-          - '8.0'
-          - '8.1'
-        typo3-versions:
-          - '^11'
+        include:
+          - php-versions: 7.4
+            typo3-versions: ^11
+          - php-versions: 8.0
+            typo3-versions: ^11
+          - php-versions: 8.1
+            typo3-versions: ^11
+          - php-versions: 8.1
+            typo3-versions: ^12
     steps:
       - name: Check out repository
         uses: actions/checkout@v2
@@ -47,7 +50,7 @@ jobs:
           restore-keys: ${{ runner.os }}-composer-
       - name: Install composer dependencies
         run: |
-          composer remove symplify/phpstan-rules --dev --no-update
+          composer remove saschaegerer/phpstan-typo3 symplify/phpstan-rules --dev --no-update
           composer require typo3/cms-core=${{ matrix.typo3-versions }} --no-progress --prefer-dist --optimize-autoloader
       - name: Run PHP linter
         run: |
@@ -81,7 +84,8 @@ jobs:
           restore-keys: ${{ runner.os }}-composer-
       - name: Install composer dependencies
         run: |
-          composer update --no-progress --prefer-dist --optimize-autoloader
+          # Use TYPO3 v11 as long as saschaegerer/phpstan-typo3 is not compatible with v12
+          composer require typo3/cms-core=^11 --no-progress --prefer-dist --optimize-autoloader
       - name: Normalize composer.json
         run: |
           composer normalize --dry-run
