@@ -48,8 +48,8 @@ Can I use the country list in another extension?
 ================================================
 
 Yes, there is a :ref:`Service class <service-class>` available. This class is
-just a wrapper around the `symfony/intl`_ component with additional
-:ref:`Signals/PSR-14 events <modification-country-list>`. If you don't need the
+just a wrapper around the `symfony/intl`_ component which provides an additional
+:ref:`PSR-14 event <modification-country-list>`. If you don't need the
 event, you can also use the Symfony component directly.
 
 
