@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Compatibility with TYPO3 v12 (#12)
 
+### Updated
+- symfony/intl to version 5.4.11 for non-Composer installations
+
 ### Removed
 - Signal for modification of the country list (#10)
 - Compatibility with TYPO3 v9 and v10 (#10, #14)
@@ -30,12 +33,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Compatibility with Symfony 6
 
 ### Updated
-- symfony/intl to version 5.4.0 for non-composer installations
+- symfony/intl to version 5.4.0 for non-Composer installations
 
 ## [1.3.1] - 2021-09-07
 
 ### Fixed
-- Include package symfony/intl for non-composer installations
+- Include package symfony/intl for non-Composer installations
 
 ## [1.3.0] - 2020-12-25
 

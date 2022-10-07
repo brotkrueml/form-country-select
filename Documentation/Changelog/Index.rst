@@ -17,6 +17,12 @@ Added
 
 * Compatibility with TYPO3 v12 (#12)
 
+Updated
+^^^^^^^
+
+
+* symfony/intl to version 5.4.11 for non-Composer installations
+
 Removed
 ^^^^^^^
 
@@ -56,7 +62,7 @@ Updated
 ^^^^^^^
 
 
-* symfony/intl to version 5.4.0 for non-composer installations
+* symfony/intl to version 5.4.0 for non-Composer installations
 
 `1.3.1 <https://github.com/brotkrueml/form-country-select/compare/v1.3.0...v1.3.1>`_ - 2021-09-07
 -----------------------------------------------------------------------------------------------------
@@ -65,7 +71,7 @@ Fixed
 ^^^^^
 
 
-* Include package symfony/intl for non-composer installations
+* Include package symfony/intl for non-Composer installations
 
 `1.3.0 <https://github.com/brotkrueml/form-country-select/compare/v1.2.0...v1.3.0>`_ - 2020-12-25
 -----------------------------------------------------------------------------------------------------
