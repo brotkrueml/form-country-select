@@ -61,7 +61,8 @@ common English-speaking countries at the top of the option list.
 
 #. Create the event listener
 
-   ::
+   .. code-block:: php
+      :caption: EXT:your_extension/Classes/EventListener/ModifyCountryOrder.php
 
       <?php
       declare(strict_types=1);
@@ -94,9 +95,10 @@ common English-speaking countries at the top of the option list.
    list with a call to the event method :php:`setCountries()`.
 
 
-#. Register your event listener in :file:`Configuration/Services.yaml`
+#. Register your event listener
 
    .. code-block:: yaml
+      :caption: EXT:your_extension/Configuration/Services.yaml
 
       services:
          YourVendor\YourExtension\EventListener\ModifyCountryOrder:
@@ -119,7 +121,9 @@ Country list usage in other scenarios
 
 It might be helpful to use the country list in other scenarios, e.g. an
 Extbase form – especially if a PSR-14 event has been assigned. For this
-case a :php:`CountryService` class is available::
+case a :php:`CountryService` class is available
+
+.. code-block:: php
 
    use Brotkrueml\FormCountrySelect\Service\CountryService;
 
