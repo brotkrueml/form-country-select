@@ -54,7 +54,6 @@ jobs:
           restore-keys: ${{ runner.os }}-composer-
       - name: Install composer dependencies
         run: |
-          composer remove saschaegerer/phpstan-typo3 symplify/phpstan-rules --dev --no-update
           composer require typo3/cms-core=${{ matrix.typo3-versions }} --no-progress --prefer-dist --optimize-autoloader
       - name: Run PHP linter
         run: |
@@ -88,8 +87,7 @@ jobs:
           restore-keys: ${{ runner.os }}-composer-
       - name: Install composer dependencies
         run: |
-          # Use TYPO3 v11 as long as saschaegerer/phpstan-typo3 is not compatible with v12
-          composer require typo3/cms-core=^11 --no-progress --prefer-dist --optimize-autoloader
+          composer update --no-progress --prefer-dist --optimize-autoloader
       - name: Normalize composer.json
         run: |
           composer normalize --dry-run
