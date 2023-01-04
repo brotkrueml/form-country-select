@@ -19,7 +19,7 @@ use TYPO3\CMS\Core\Site\Entity\SiteLanguage;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Form\Domain\Model\FormDefinition;
 use TYPO3\CMS\Form\Domain\Model\FormElements\GenericFormElement;
-use TYPO3\CMS\Form\Domain\Model\Renderable\RenderableInterface;
+use TYPO3\CMS\Form\Domain\Model\Renderable\CompositeRenderableInterface;
 
 final class CountrySelect extends GenericFormElement
 {
@@ -36,13 +36,17 @@ final class CountrySelect extends GenericFormElement
         ));
     }
 
-    private function getFormIdentifier(RenderableInterface $renderable): string
+    private function getFormIdentifier(?CompositeRenderableInterface $renderable): string
     {
         if ($renderable instanceof FormDefinition) {
             return $renderable->getIdentifier();
         }
 
-        return $this->getFormIdentifier($renderable->getParentRenderable());
+        if ($renderable instanceof CompositeRenderableInterface) {
+            return $this->getFormIdentifier($renderable->getParentRenderable());
+        }
+
+        return '';
     }
 
     private function getLanguageCode(): string

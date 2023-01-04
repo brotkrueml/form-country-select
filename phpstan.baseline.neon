@@ -1,7 +1,0 @@
-parameters:
-	ignoreErrors:
-		-
-			message: "#^Parameter \\#1 \\$renderable of method Brotkrueml\\\\FormCountrySelect\\\\Domain\\\\Model\\\\FormElements\\\\CountrySelect\\:\\:getFormIdentifier\\(\\) expects TYPO3\\\\CMS\\\\Form\\\\Domain\\\\Model\\\\Renderable\\\\RenderableInterface, TYPO3\\\\CMS\\\\Form\\\\Domain\\\\Model\\\\Renderable\\\\CompositeRenderableInterface\\|null given\\.$#"
-			count: 2
-			path: Classes/Domain/Model/FormElements/CountrySelect.php
-
