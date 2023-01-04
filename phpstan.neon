@@ -11,13 +11,11 @@ parameters:
         - phpstan-bootstrap.php
     paths:
         - Classes
+    cognitive_complexity:
+        class: 10
+        function: 8
 
 services:
-    -
-        class: Symplify\PHPStanRules\CognitiveComplexity\Rules\ClassLikeCognitiveComplexityRule
-        tags: [phpstan.rules.rule]
-        arguments:
-            maxClassCognitiveComplexity: 10
     -
         class: Symplify\PHPStanRules\Rules\ForbiddenFuncCallRule
         tags: [phpstan.rules.rule]
