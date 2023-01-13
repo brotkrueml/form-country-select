@@ -1,12 +1,10 @@
 define([
   'jquery',
   'TYPO3/CMS/Form/Backend/FormEditor/Helper',
-  'TYPO3/CMS/Backend/Icons',
-  'TYPO3/CMS/Form/Backend/Contrib/jquery.mjs.nestedSortable'
 ], function($, Helper) {
   'use strict';
 
-  return (function($, Helper, Icons) {
+  return (function($, Helper) {
 
     /**
      * @private

@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- Remove reference of jquery.mjs.nestedSortable which is not available in TYPO3 v12
+
 ## [2.0.0] - 2022-10-07
 
 ### Added
