@@ -6,8 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.1] - 2023-01-13
+
 ### Fixed
-- Remove reference of jquery.mjs.nestedSortable which is not available in TYPO3 v12
+- JavaScript error in form module with TYPO3 v12.1
 
 ## [2.0.0] - 2022-10-07
 
@@ -74,7 +76,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Form element "Country select"
 - Signal/slot and PSR-14 event for modifying the country list
 
-[Unreleased]: https://github.com/brotkrueml/form-country-select/compare/v2.0.0...HEAD
+[Unreleased]: https://github.com/brotkrueml/form-country-select/compare/v2.0.1...HEAD
+[2.0.1]: https://github.com/brotkrueml/form-country-select/compare/v2.0.0...v2.0.1
 [2.0.0]: https://github.com/brotkrueml/form-country-select/compare/v1.4.2...v2.0.0
 [1.4.2]: https://github.com/brotkrueml/form-country-select/compare/v1.4.1...v1.4.2
 [1.4.1]: https://github.com/brotkrueml/form-country-select/compare/v1.4.0...v1.4.1

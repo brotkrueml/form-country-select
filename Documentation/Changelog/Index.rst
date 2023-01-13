@@ -8,14 +8,17 @@ All notable changes to this project will be documented in this file.
 The format is based on `Keep a Changelog <https://keepachangelog.com/en/1.0.0/>`_\ ,
 and this project adheres to `Semantic Versioning <https://semver.org/spec/v2.0.0.html>`_.
 
-`Unreleased <https://github.com/brotkrueml/form-country-select/compare/v2.0.0...HEAD>`_
+`Unreleased <https://github.com/brotkrueml/form-country-select/compare/v2.0.1...HEAD>`_
 -------------------------------------------------------------------------------------------
+
+`2.0.1 <https://github.com/brotkrueml/form-country-select/compare/v2.0.0...v2.0.1>`_ - 2023-01-13
+-----------------------------------------------------------------------------------------------------
 
 Fixed
 ^^^^^
 
 
-* Remove reference of jquery.mjs.nestedSortable which is not available in TYPO3 v12
+* JavaScript error in form module with TYPO3 v12.1
 
 `2.0.0 <https://github.com/brotkrueml/form-country-select/compare/v1.4.2...v2.0.0>`_ - 2022-10-07
 -----------------------------------------------------------------------------------------------------
