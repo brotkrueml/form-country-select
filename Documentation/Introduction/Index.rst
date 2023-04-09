@@ -32,13 +32,6 @@ By default, the list is sorted alphabetically by country name. However, it is
 possible to :ref:`modify <modification-country-list>` the order of the countries
 or the country list as a whole.
 
-See examples in action:
-
-- `English form`_
-- `German form`_
-- `Polish form`_
-- `Turkish form`_
-
 
 .. _where-the-country-list-comes-from:
 
@@ -63,10 +56,6 @@ This extension uses `semantic versioning`_ which basically means for you, that
 
 .. _ISO 3166-1: https://en.wikipedia.org/wiki/ISO_3166-1
 .. _alpha-2 code: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
-.. _English form: https://www.jobrouter.com/en/contact/#contact-6
-.. _German form: https://www.jobrouter.com/de/kontakt/#contact-2454
 .. _ICU library: https://github.com/unicode-org/icu
-.. _Polish form: https://www.jobrouter.com/pl/kontakt/#contact-3657
 .. _semantic versioning: https://semver.org/
 .. _symfony/intl: https://github.com/symfony/intl
-.. _Turkish form: https://www.jobrouter.com/tr/iletisim/#contact-3648
