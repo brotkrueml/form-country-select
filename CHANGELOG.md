@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Updated
+- symfony/intl to version 5.4.22 for non-Composer installations
+
 ### Removed
 - Compatibility with TYPO3 v12 (due to a form element with same name since TYPO3 v12.3) (#15)
 
