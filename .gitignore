@@ -1,6 +1,6 @@
 .Build
 .idea
-.phpunit.result.cache
+.phpunit.cache
 composer.lock
 tools
 *GENERATED*

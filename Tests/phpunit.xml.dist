@@ -2,7 +2,7 @@
 <phpunit
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="../.Build/vendor/phpunit/phpunit/phpunit.xsd"
-    convertDeprecationsToExceptions="true"
+    cacheDirectory=".phpunit.cache"
     testdox="true"
 >
     <coverage>

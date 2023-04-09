@@ -9,14 +9,17 @@ declare(strict_types=1);
  * LICENSE.txt file that was distributed with this source code.
  */
 
+namespace Brotkrueml\FormCountrySelect\Tests\Unit\Event;
+
 use Brotkrueml\FormCountrySelect\Event\CountriesModificationEvent;
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 
-class CountriesModificationEventTest extends TestCase
+#[CoversClass(CountriesModificationEvent::class)]
+final class CountriesModificationEventTest extends TestCase
 {
-    /**
-     * @test
-     */
+    #[Test]
     public function gettersReturnCorrectValuesSetByConstructor(): void
     {
         $countries = [
@@ -33,9 +36,7 @@ class CountriesModificationEventTest extends TestCase
         self::assertSame($languageTwoLetterIsoCode, $subject->getLanguageTwoLetterIsoCode());
     }
 
-    /**
-     * @test
-     */
+    #[Test]
     public function setCountriesIsImplementedCorrectly(): void
     {
         $subject = new CountriesModificationEvent(
