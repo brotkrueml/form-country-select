@@ -19,6 +19,9 @@ What does it do?
    compatible version for TYPO3 v13+. However, the current version will receive
    bug fixes as long as the LTS version is supported by the community.
 
+   Have also a look into the :ref:`migration` chapter when you upgrade from an
+   older version.
+
 The extension provides a form element for the :ref:`TYPO3 Form Framework
 <ext_form:introduction>` which displays a select box with all countries from the
 `ISO 3166-1`_ standard. The country list is localised according to the language

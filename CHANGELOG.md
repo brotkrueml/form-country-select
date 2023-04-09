@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Compatibility with TYPO3 v12 (#15)
 
+### Changed
+- Form type from "CountrySelect" to "ExtCountrySelect" (#15)
+
 ## [2.0.1] - 2023-01-13
 
 ### Fixed

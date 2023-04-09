@@ -17,6 +17,12 @@ Added
 
 * Compatibility with TYPO3 v12 (#15)
 
+Changed
+^^^^^^^
+
+
+* Form type from "CountrySelect" to "ExtCountrySelect" (#15)
+
 `2.0.1 <https://github.com/brotkrueml/form-country-select/compare/v2.0.0...v2.0.1>`_ - 2023-01-13
 -----------------------------------------------------------------------------------------------------
 

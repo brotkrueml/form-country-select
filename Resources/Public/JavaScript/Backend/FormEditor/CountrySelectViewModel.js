@@ -101,7 +101,7 @@ define([
        * @return void
        */
       getPublisherSubscriber().subscribe('view/stage/abstract/render/template/perform', function(topic, args) {
-        if (args[0].get('type') === 'CountrySelect') {
+        if (args[0].get('type') === 'ExtCountrySelect') {
           getFormEditorApp().getViewModel().getStage().renderSimpleTemplateWithValidators(args[0], args[1]);
         }
       });

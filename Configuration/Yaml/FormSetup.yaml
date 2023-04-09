@@ -4,7 +4,7 @@ TYPO3:
       prototypes:
         standard:
           formElementsDefinition:
-            CountrySelect:
+            ExtCountrySelect:
               __inheritances:
                 10: 'TYPO3.CMS.Form.prototypes.standard.formElementsDefinition.SingleSelect'
               formEditor:
@@ -16,7 +16,7 @@ TYPO3:
                     label: formEditor.elements.TextMixin.editor.defaultValue.label
                     propertyPath: defaultValue
                   700: null
-                label: 'formEditor.elements.CountrySelect.label'
+                label: 'Country select (Ext)'
                 group: select
                 groupSorting: 1000
                 iconIdentifier: 'form-country-select'
@@ -25,7 +25,7 @@ TYPO3:
                 templateName: 'SingleSelect'
           formEditor:
             formEditorPartials:
-              FormElement-CountrySelect: 'Stage/SimpleTemplate'
+              FormElement-ExtCountrySelect: 'Stage/SimpleTemplate'
             dynamicRequireJsModules:
               additionalViewModelModules:
                 1647970204: 'TYPO3/CMS/FormCountrySelect/Backend/FormEditor/CountrySelectViewModel'

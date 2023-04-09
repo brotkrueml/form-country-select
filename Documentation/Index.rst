@@ -46,6 +46,7 @@ selection list.
    Developer/Index
    FAQ/Index
    Translation/Index
+   Migration/Index
    Changelog/Index
    Maintenance/Index
 
