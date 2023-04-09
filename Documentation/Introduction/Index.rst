@@ -11,6 +11,14 @@ Introduction
 What does it do?
 ================
 
+.. attention::
+   With TYPO3 v12.3 a new form element "Country Select" was :ref:`introduced
+   <feature-99735-1678701694>` which serves the same purpose as the form
+   element provided by this extension. This extension is now considered legacy,
+   you should use TYPO3 Core's form element instead. There will be no
+   compatible version for TYPO3 v13+. However, the current version will receive
+   bug fixes as long as the LTS version is supported by the community.
+
 The extension provides a form element for the :ref:`TYPO3 Form Framework
 <ext_form:introduction>` which displays a select box with all countries from the
 `ISO 3166-1`_ standard. The country list is localised according to the language

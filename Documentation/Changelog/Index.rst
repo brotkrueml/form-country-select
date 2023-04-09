@@ -11,6 +11,12 @@ and this project adheres to `Semantic Versioning <https://semver.org/spec/v2.0.0
 `Unreleased <https://github.com/brotkrueml/form-country-select/compare/v2.0.1...HEAD>`_
 -------------------------------------------------------------------------------------------
 
+Added
+^^^^^
+
+
+* Compatibility with TYPO3 v12 (#15)
+
 `2.0.1 <https://github.com/brotkrueml/form-country-select/compare/v2.0.0...v2.0.1>`_ - 2023-01-13
 -----------------------------------------------------------------------------------------------------
 

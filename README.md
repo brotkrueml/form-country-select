@@ -12,10 +12,19 @@ of the website page.
 
 ## Versions and support
 
-| Latest release | TYPO3       | PHP   | Updates will contain                     |
-|----------------|-------------|-------|------------------------------------------|
-| 2.x            | 11.5 - 12.4 | ≥ 7.4 | Features, security and bug fixes         |
-| 1.x            | 9.5 - 11.5  | ≥ 7.2 | Security fixes (EOL expected April 2023) |
+> With TYPO3 v12.3 a new form element "Country Select" was
+> [introduced](https://docs.typo3.org/c/typo3/cms-core/main/en-us/Changelog/12.3/Feature-99735-NewCountrySelectFormElement.html#feature-99735-1678701694)
+> which serves the same purpose as the form element provided by this extension.
+> This extension is now considered legacy, you should use TYPO3 Core's form element instead.
+> There will be no compatible version for TYPO3 v13+. However, the current version will
+> receive bug fixes as long as the LTS version is supported by the community.
+
+| Latest release | TYPO3      | PHP   | Updates will contain   |
+|----------------|------------|-------|------------------------|
+| 3.x            | 12.4       | ≥ 7.4 | Security and bug fixes |
+| 2.x            | 11.5       | ≥ 7.4 | Security and bug fixes |
+| 1.x            | 9.5 - 11.5 | ≥ 7.2 | End of life            |
+
 
 [Documentation](https://docs.typo3.org/p/brotkrueml/form-country-select/main/en-us/) |
 [Changelog](https://github.com/brotkrueml/form-country-select/blob/main/CHANGELOG.md) |
