@@ -21,7 +21,7 @@ of the website page.
 
 | Latest release | TYPO3      | PHP   | Updates will contain   |
 |----------------|------------|-------|------------------------|
-| 3.x            | 12.4       | ≥ 7.4 | Security and bug fixes |
+| 3.x            | 12.4       | ≥ 8.1 | Security and bug fixes |
 | 2.x            | 11.5       | ≥ 7.4 | Security and bug fixes |
 | 1.x            | 9.5 - 11.5 | ≥ 7.2 | End of life            |
 

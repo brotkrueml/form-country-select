@@ -14,20 +14,13 @@ namespace Brotkrueml\FormCountrySelect\Event;
 final class CountriesModificationEvent
 {
     /**
-     * @var array<string, string>
-     */
-    private array $countries;
-    private string $formIdentifier;
-    private string $languageTwoLetterIsoCode;
-
-    /**
      * @param array<string, string> $countries
      */
-    public function __construct(array $countries, string $formIdentifier, string $languageTwoLetterIsoCode)
-    {
-        $this->countries = $countries;
-        $this->formIdentifier = $formIdentifier;
-        $this->languageTwoLetterIsoCode = $languageTwoLetterIsoCode;
+    public function __construct(
+        private array $countries,
+        private readonly string $formIdentifier,
+        private readonly string $languageTwoLetterIsoCode
+    ) {
     }
 
     /**
