@@ -44,7 +44,7 @@ class CountriesModificationEventTest extends TestCase
                 'US' => 'United States',
             ],
             'some-identifier',
-            'en'
+            'en',
         );
 
         $countries = [

@@ -12,5 +12,5 @@ defined('TYPO3') || die();
 TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
     Brotkrueml\FormCountrySelect\Extension::KEY,
     'Configuration/TypoScript',
-    'Form Country Select'
+    'Form Country Select',
 );

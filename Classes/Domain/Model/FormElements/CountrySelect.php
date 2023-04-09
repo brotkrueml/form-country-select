@@ -32,7 +32,7 @@ final class CountrySelect extends GenericFormElement
 
         $this->setProperty('options', $countryService->getCountries(
             $this->getLanguageCode(),
-            $this->getFormIdentifier($this->getParentRenderable())
+            $this->getFormIdentifier($this->getParentRenderable()),
         ));
     }
 

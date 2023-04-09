@@ -19,7 +19,7 @@ final class CountriesModificationEvent
     public function __construct(
         private array $countries,
         private readonly string $formIdentifier,
-        private readonly string $languageTwoLetterIsoCode
+        private readonly string $languageTwoLetterIsoCode,
     ) {
     }
 
