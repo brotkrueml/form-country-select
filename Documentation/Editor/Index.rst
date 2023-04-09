@@ -24,7 +24,12 @@ window with the :guilabel:`New element` wizard opens:
    :alt: New element wizard
 
 Under the group :guilabel:`Select elements` you'll find the form element
-:guilabel:`Country select`. Click on the element to add it to the form.
+:guilabel:`Country select (Ext)`. Click on the element to add it to the form.
+
+.. note::
+   In TYPO3 v12 a new form element "Country select" was introduced. The form
+   element provided by TYPO3 is "Country select", whereas the element provided
+   by this extension is "Country select (Ext)".
 
 
 Configuration of the element
