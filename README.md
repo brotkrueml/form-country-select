@@ -12,10 +12,10 @@ of the website page.
 
 ## Versions and support
 
-| Latest release | TYPO3       | PHP   | Updates will contain                     |
-|----------------|-------------|-------|------------------------------------------|
-| 2.x            | 11.5 - 12.4 | ≥ 7.4 | Features, security and bug fixes         |
-| 1.x            | 9.5 - 11.5  | ≥ 7.2 | Security fixes (EOL expected April 2023) |
+| Latest release | TYPO3      | PHP   | Updates will contain   |
+|----------------|------------|-------|------------------------|
+| 2.x            | 11.5       | ≥ 7.4 | Security and bug fixes |
+| 1.x            | 9.5 - 11.5 | ≥ 7.2 | End of life            |
 
 [Documentation](https://docs.typo3.org/p/brotkrueml/form-country-select/main/en-us/) |
 [Changelog](https://github.com/brotkrueml/form-country-select/blob/main/CHANGELOG.md) |

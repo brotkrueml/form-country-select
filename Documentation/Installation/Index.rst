@@ -10,8 +10,14 @@ Installation
 Target group: **Administrators**
 
 .. note::
-   The extension in version |release| supports TYPO3 v11 LTS and TYPO3 v12. Use
+   The extension in version |release| supports TYPO3 v11 LTS. Use
    version 1.x for support with TYPO3 v9 LTS and TYPO3 v10 LTS.
+
+.. attention::
+   Version 2.0 supported also TYPO3 v12. The compatibility was removed with
+   version 2.1 again as a form element with the same name was
+   :ref:`introduced <feature-99735-1678701694>` with TYPO3 v12.3. For
+   compatibility with TYPO3 v12.3+ use version 3 of this extension.
 
 The recommended way to install this extension is by using Composer. In your
 Composer-based TYPO3 project root, just type::
