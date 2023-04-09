@@ -8,8 +8,11 @@ All notable changes to this project will be documented in this file.
 The format is based on `Keep a Changelog <https://keepachangelog.com/en/1.0.0/>`_\ ,
 and this project adheres to `Semantic Versioning <https://semver.org/spec/v2.0.0.html>`_.
 
-`Unreleased <https://github.com/brotkrueml/form-country-select/compare/v2.1.0...HEAD>`_
+`Unreleased <https://github.com/brotkrueml/form-country-select/compare/v3.0.0...HEAD>`_
 -------------------------------------------------------------------------------------------
+
+`3.0.0 <https://github.com/brotkrueml/form-country-select/compare/v2.1.0...v3.0.0>`_ - 2023-04-09
+-----------------------------------------------------------------------------------------------------
 
 Added
 ^^^^^
@@ -22,6 +25,18 @@ Changed
 
 
 * Form type from "CountrySelect" to "ExtCountrySelect" (#15)
+
+Updated
+^^^^^^^
+
+
+* symfony/intl to version 6.2.8 for non-Composer installations
+
+Removed
+^^^^^^^
+
+
+* Compatibility with TYPO3 v11
 
 `2.1.0 <https://github.com/brotkrueml/form-country-select/compare/v2.0.1...v2.1.0>`_ - 2023-04-09
 -----------------------------------------------------------------------------------------------------
