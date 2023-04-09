@@ -1,0 +1,6 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Offset 'lang' does not exist on array\\|string\\.$#"
+			count: 1
+			path: Classes/Domain/Model/FormElements/CountrySelect.php

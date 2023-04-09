@@ -2,6 +2,7 @@ includes:
     - .Build/vendor/symplify/phpstan-rules/config/array-rules.neon
     - .Build/vendor/symplify/phpstan-rules/config/forbidden-static-rules.neon
     - .Build/vendor/symplify/phpstan-rules/config/regex-rules.neon
+    - phpstan.baseline.neon
 
 parameters:
     phpVersion: 80100
