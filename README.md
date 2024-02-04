@@ -19,11 +19,11 @@ of the website page.
 > There will be no compatible version for TYPO3 v13+. However, the current version will
 > receive bug fixes as long as the LTS version is supported by the community.
 
-| Latest release | TYPO3      | PHP   | Updates will contain   |
-|----------------|------------|-------|------------------------|
-| 3.x            | 12.4       | ≥ 8.1 | Security and bug fixes |
-| 2.x            | 11.5       | ≥ 7.4 | Security and bug fixes |
-| 1.x            | 9.5 - 11.5 | ≥ 7.2 | End of life            |
+| Latest release | TYPO3      | PHP   | Updates will contain                                   |
+|----------------|------------|-------|--------------------------------------------------------|
+| 3.x            | 12.4       | ≥ 8.1 | Security and bug fixes                                 |
+| 2.x            | 11.5       | ≥ 7.4 | Security and bug fixes, End of life expected: Oct 2024 |
+| 1.x            | 9.5 - 11.5 | ≥ 7.2 | End of life                                            |
 
 
 [Documentation](https://docs.typo3.org/p/brotkrueml/form-country-select/main/en-us/) |
