@@ -1,34 +1,5 @@
-﻿.. More information about this file:
-   https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/GeneralConventions/FileStructure.html#includes-rst-txt
-
-.. ----------
-.. text roles
-.. ----------
-
-.. role:: aspect(emphasis)
-.. role:: bash(code)
-.. role:: html(code)
-.. role:: js(code)
-.. role:: php(code)
-.. role:: rst(code)
-.. role:: sep(strong)
-.. role:: sql(code)
-
-.. role:: tsconfig(code)
-   :class: typoscript
-
-.. role:: typoscript(code)
-.. role:: xml(code)
-   :class: html
-
-.. role:: yaml(code)
-
-.. default-role:: code
-
-.. ---------
-.. highlight
-.. ---------
-
-.. By default, code blocks use PHP syntax highlighting
-
-.. highlight:: php
+﻿.. attention::
+   This extension has been marked as obsolete. Please migrate to the
+   Country Select form element provided by EXT:form available since
+   TYPO3 v12.3:
+   :ref:`changelog:feature-99735-1678701694`

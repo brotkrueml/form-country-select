@@ -23,7 +23,7 @@
     },
     "require-dev": {
         "brotkrueml/coding-standards": "~4.0.0",
-        "ergebnis/composer-normalize": "~2.30.2",
+        "ergebnis/composer-normalize": "~2.44.0",
         "phpstan/extension-installer": "^1.2",
         "phpstan/phpstan": "1.10.11",
         "phpunit/phpunit": "^10.0",
@@ -56,7 +56,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-main": "3.0.x-dev"
+            "dev-main": "3.1.x-dev"
         },
         "typo3/cms": {
             "extension-key": "form_country_select",

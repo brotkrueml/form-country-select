@@ -4,7 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [3.1.0] - 2024-11-11
+
+This extension has been marked as obsolete. Please migrate to the
+Country Select form element provided by EXT:form available since
+TYPO3 v12.3:
+[Feature: #99735 - New Country Select form element](https://docs.typo3.org/c/typo3/cms-core/main/en-us/Changelog/12.3/Feature-99735-NewCountrySelectFormElement.html)
+
 
 ## [3.0.0] - 2023-04-09
 
@@ -98,7 +104,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Form element "Country select"
 - Signal/slot and PSR-14 event for modifying the country list
 
-[Unreleased]: https://github.com/brotkrueml/form-country-select/compare/v3.0.0...HEAD
+[3.1.0]: https://github.com/brotkrueml/form-country-select/compare/v3.0.0...v3.1.0
 [3.0.0]: https://github.com/brotkrueml/form-country-select/compare/v2.1.0...v3.0.0
 [2.1.0]: https://github.com/brotkrueml/form-country-select/compare/v2.0.1...v2.1.0
 [2.0.1]: https://github.com/brotkrueml/form-country-select/compare/v2.0.0...v2.0.1

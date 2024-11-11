@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<guides
+    xmlns="https://www.phpdoc.org/guides"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://www.phpdoc.org/guides ../vendor/phpdocumentor/guides-cli/resources/schema/guides.xsd"
+        links-are-relative="true"
+>
+    <extension
+        class="\T3Docs\Typo3DocsTheme\DependencyInjection\Typo3DocsThemeExtension"
+               project-contact="typo3 (at) krue (dot) ml"
+               project-repository="https://github.com/brotkrueml/form-country-select"
+               project-issues="https://github.com/brotkrueml/form-country-select/issues" edit-on-github-branch="main"
+               edit-on-github="brotkrueml/form-country-select" typo3-core-preferred="11.5"
+    />
+    <project
+        title="Form Country Select"
+        release="3.1.0"
+        version="3.1"
+        copyright="since 2019 by Chris Müller"
+    />
+</guides>
